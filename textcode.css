@@ -1,0 +1,334 @@
+
+.sports-section {
+    width: 1295px;
+
+    margin-left: 23px;
+
+    padding-top: 10px;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.sports-header {
+    height: 43px;
+
+    border-bottom: 4px solid #111;
+
+    margin-bottom: 13px;
+}
+
+
+/* ============================================================
+   TITLE
+============================================================ */
+
+.sports-title {
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: #111;
+}
+
+
+/* ============================================================
+   SPORTS ICON
+============================================================ */
+
+.sports-icon {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+.sports-icon span {
+    width: 11px;
+    height: 23px;
+
+    display: block;
+
+    background: #b40000;
+}
+
+.sports-icon span:first-child {
+    border-radius: 3px 3px 7px 3px;
+}
+
+.sports-icon span:last-child {
+    margin-left: 2px;
+
+    border-radius: 3px 3px 3px 7px;
+}
+
+
+/* ============================================================
+   HEADER ARROW
+============================================================ */
+
+.sports-arrow {
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid #111;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #111;
+}
+
+.sports-arrow:hover {
+    background: #111;
+
+    color: #fff;
+}
+
+
+/* ============================================================
+   SMALL NEWS IMAGE
+============================================================ */
+
+.sports-small-img {
+    height: 125px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* ============================================================
+   SMALL NEWS TITLE
+============================================================ */
+
+.sports-small-title {
+    font-size: 17px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+
+    color: #222;
+
+    transition: color 0.25s ease;
+}
+
+
+/* ============================================================
+   FEATURED IMAGE
+============================================================ */
+
+.featured-sports-img {
+    height: 265px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* ============================================================
+   FEATURED TITLE
+============================================================ */
+
+.featured-sports-title {
+    font-size: 25px;
+
+    line-height: 1.25;
+
+    font-weight: 600;
+
+    color: #222;
+
+    transition: color 0.25s ease;
+}
+
+
+/* ============================================================
+   FEATURED DESCRIPTION
+============================================================ */
+
+.featured-sports-description {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #555;
+}
+
+
+/* ============================================================
+   HOVER
+============================================================ */
+
+.sports-link:hover .sports-small-title,
+.featured-sports-link:hover .featured-sports-title {
+    color: #0878d1;
+}
+
+
+.sports-link:hover img,
+.featured-sports-link:hover img {
+    opacity: 0.65;
+}
+
+
+/* ============================================================
+   LEAGUE BOX
+============================================================ */
+
+/* Right-side scrollable list */
+.league-box {
+    height: 384px;
+    overflow-y: auto;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Each list item */
+.league-item {
+    min-height: 40px;
+
+    padding: 4px 10px;
+
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #222;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Logo */
+.league-logo {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+/* Hover */
+.league-item:hover {
+    color: #0878d1;
+}
+
+
+/* Scrollbar */
+.league-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.league-box::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+.league-box::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+/* ============================================================
+   LEAGUE TITLE
+============================================================ */
+
+.league-heading {
+    padding: 7px 12px;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    color: #222;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ============================================================
+   LEAGUE ITEM
+============================================================ */
+
+.league-item {
+    min-height: 40px;
+
+    padding: 4px 10px;
+
+    border-bottom: 1px solid #ddd;
+
+    color: #222;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    gap: 10px;
+
+    transition: color 0.2s ease;
+}
+
+
+.league-item:last-child {
+    border-bottom: 0;
+}
+
+
+.league-item:hover {
+    color: #0878d1;
+}
+
+
+/* ============================================================
+   LEAGUE LOGO
+============================================================ */
+
+.league-logo {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+/* ============================================================
+   SCROLLBAR
+============================================================ */
+
+.league-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.league-box::-webkit-scrollbar-thumb {
+    background: #ccc;
+
+    border-radius: 10px;
+}
+
+
