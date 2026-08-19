@@ -1,0 +1,298 @@
+/* ==========================================================
+   Kalbela-style header
+   Bootstrap 5 handles the grid/dropdown mechanics; this file
+   overrides colors, spacing, type and icon treatment.
+   ========================================================== */
+
+:root {
+  --kb-red: #c1272d;      /* accent / hover color, matches the logo red */
+  --kb-dark: #1a1a1a;     /* nav text color */
+  --kb-border: #e7e7e7;   /* hairline border under header */
+  --kb-icon-bg: #f2f2f2;  /* circle background for search/bell */
+}
+
+body {
+  font-family: 'Noto Sans Bengali', 'SolaimanLipi', sans-serif;
+  margin: 0;
+}
+
+/* ---------- header shell ---------- */
+#minherder {
+  background: #ffffff;
+  border-bottom: 1px solid var(--kb-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+#minherder .container-fluid {
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* ---------- logo ---------- */
+.pageLogo {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.pageLogo img {
+  height: 62px;
+  width: auto;
+  display: block;
+}
+
+/* ---------- nav ---------- */
+.navItem {
+  flex: 1;
+  padding-top: 0 !important;
+}
+
+.navItem ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navItem ul li a,
+.navItem ul li button.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  color: var(--kb-dark);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.navItem ul li a i,
+.navItem ul li button.dropdown-toggle i {
+  color: var(--kb-red);
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.navItem ul li a:hover,
+.navItem ul li button.dropdown-toggle:hover {
+  color: var(--kb-red);
+}
+
+.navItem ul li a img {
+  filter: none;
+}
+
+/* magazine dropdown button — strip default bootstrap button chrome */
+.navItem .dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+}
+
+.navItem .dropdown-toggle::after {
+  margin-left: 6px;
+  vertical-align: 1px;
+}
+
+.navItem .dropdown-toggle:focus,
+.navItem .dropdown-toggle:active {
+  box-shadow: none;
+}
+
+.navItem .dropdown-menu {
+  border: 1px solid var(--kb-border);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 6px 0;
+  min-width: 210px;
+}
+
+.navItem .dropdown-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--kb-dark);
+  padding: 8px 18px;
+}
+
+.navItem .dropdown-item:hover,
+.navItem .dropdown-item:focus {
+  background: #fbeceb;
+  color: var(--kb-red);
+}
+
+/* empty trailing <li> in the markup shouldn't take space */
+.navItem ul li:empty,
+.navItem ul li a:empty {
+  display: none;
+}
+
+/* ---------- right-hand icons (search / bell) ---------- */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.icons span,
+.icons samp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--kb-icon-bg);
+  color: var(--kb-dark);
+  cursor: pointer;
+  font-style: normal;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.icons span:hover,
+.icons samp:hover {
+  background: var(--kb-red);
+  color: #ffffff;
+}
+
+.icons span i,
+.icons samp i {
+  font-size: 15px;
+}
+
+/* the "x" icon inside the search span is the close state for an
+   expanding search box — hide it until that box is open */
+.icons span i.fa-x {
+  display: none;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1200px) {
+  .navItem ul {
+    gap: 18px !important;
+  }
+  .navItem ul li a,
+  .navItem ul li button.dropdown-toggle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  #minherder .container-fluid {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+  .navItem {
+    order: 3;
+    flex-basis: 100%;
+  }
+  .navItem ul {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+  .icons {
+    margin-left: 0;
+  }
+}
+
+/* ==========================================================
+   Category nav bar (second header — সর্বশেষ / জাতীয় / ... row)
+   ========================================================== */
+
+:root {
+  --kb-cat-text: #7a1f22; /* dark maroon used for the category links */
+}
+
+body > header:nth-of-type(2) {
+  background: #ffffff;
+  border-bottom: 1px solid var(--kb-border);
+}
+
+body > header:nth-of-type(2) .navbar {
+  background: transparent !important;
+  width: 100%;
+  padding: 10px 24px;
+}
+
+body > header:nth-of-type(2) .navbar .container-fluid {
+  padding: 0;
+  align-items: center;
+}
+
+/* house icon */
+.navbar-brand {
+  color: var(--kb-dark);
+  font-size: 18px;
+  margin-right: 28px;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--kb-red);
+}
+
+/* category links */
+.navbar-nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  color: var(--kb-cat-text);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--kb-red);
+}
+
+/* "more categories" bars icon, always visible at the far right */
+.moreMenuBtn {
+  border: none;
+  background: none;
+  color: var(--kb-dark);
+  font-size: 18px;
+  margin-left: auto;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.moreMenuBtn:hover {
+  color: var(--kb-red);
+}
+
+/* Bootstrap's own toggler is only for the collapsed/mobile state;
+   the moreMenuBtn above is the always-visible "more" icon from the design */
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+  padding: 2px 6px;
+}
+
+@media (max-width: 992px) {
+  body > header:nth-of-type(2) .navbar {
+    padding: 10px 16px;
+  }
+  .navbar-collapse {
+    background: #ffffff;
+    padding: 12px 0;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+}

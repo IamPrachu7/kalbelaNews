@@ -1,0 +1,3098 @@
+<!doctype html>
+<html lang="bn" data-bs-theme="light">
+
+<head>
+    <title>কালবেলা | বিডি নিউজ | বাংলা নিউজ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts: Noto Serif Bengali -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="asset/icons/Untitled.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- for ad -->
+
+    <!-- Added the 'sticky-top-ad' custom class to your container -->
+    <div class="showTopAd container-fluid sticky-top-ad border-bottom">
+        <div class="mb-2 py-2 text-center top-add">
+            <div
+                style="width: 100%; height: 80px; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                <img src="asset/img/topAd.jpg" alt="Advertisement"
+                    style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* CSS to keep the section stuck at the top while scrolling */
+        .sticky-top-ad {
+            position: fixed;
+            /* Forces the element to stay in place relative to the screen */
+            top: 0;
+            /* Aligns it perfectly to the very top edge */
+            left: 0;
+            /* Ensures it aligns to the left edge */
+            width: 100%;
+            /* Spans the full width of the viewport */
+            z-index: 1050;
+            /* Ensures it floats safely above menus and other web content */
+            background-color: #ffffff;
+            /* Prevents text underneath from bleeding through */
+        }
+
+        /* Optional: Add this layout adjustment to your main body/content wrapper 
+   so the fixed ad doesn't accidentally cover up your logo or main navigation menu */
+        body {
+            padding-top: 96px;
+            /* Match the approximate total height of the ad container */
+        }
+    </style>
+
+
+    <!-- Header Section (Previous code) -->
+    <!-- <header class="main-header border-top border-bottom">
+        <div class="container-fluid px-3 py-2">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="pageLogo">
+                    <a href="index.html"><img src="asset/logos/logo.png" alt="কালবেলা" class="img-fluid logo-img"></a>
+                </div>
+                <div class="topNavLinks align-items-center">
+                    <ul class="nav d-flex align-items-center gap-4">
+                        <li><a class="topLink" href="#"><i class="fa-solid fa-list-check me-1"></i> আজকের পত্রিকা</a></li>
+                        <li><a class="topLink" href="#" target="_blank"><i class="fa-regular fa-newspaper me-1"></i> ই-পেপার</a></li>
+                        <li class="dropdown">
+                            <a class="topLink dropdown-toggle" href="#" id="magDropdown" data-bs-toggle="dropdown"><i class="fa-solid fa-book-open me-1"></i> ম্যাগাজিন</a>
+                            <ul class="dropdown-menu shadow-sm">
+                                <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৬</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="topLink" href="/archive"><i class="fa-solid fa-box-archive me-1"></i> আর্কাইভ</a></li>
+                        <li><a class="topLink" href="#"><i class="fa-solid fa-thumbs-up me-1"></i> সোশ্যাল মিডিয়া</a></li>
+                        <li><a class="topLink" href="#"><i class="fa-solid fa-arrow-right-arrow-left me-1"></i> বাংলা কনভার্টার</a></li>
+                    </ul>
+                </div>
+                <div class="headerIcons d-flex align-items-center gap-2">
+                    <button class="iconBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <div class="notifyWrap position-relative">
+                        <button class="iconBtn"><i class="fa-regular fa-bell"></i><span class="notifyDot"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header> -->
+
+    <header class="bg-white border" id="minherder">
+        <div class="container-fluid d-flex align-items-center pt-3 py-2 px-3">
+
+            <div class="pageLogo ms-1 me-5">
+                <a href="index.html" class="d-block">
+                    <img src="asset/logos/logo.png" alt="pagelogo">
+                </a>
+            </div>
+
+            <div class="navItem flex-grow-1">
+                <ul
+                    class="d-flex flex-wrap justify-content-evenly align-items-center gap-4 list-unstyled mb-0 ms-4 me-4">
+                    <li>
+                        <a aria-label="আজকের পত্রিকা" href=""
+                            class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+                            <i class="fa-sharp fa-solid fa-table-list me-2"></i> আজকের পত্রিকা
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="ই-পেপার " href="" target="_blank"
+                            class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+                            <i class="fa-regular fa-newspaper me-2"></i>ই-পেপার
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <!-- dropdown btn -->
+                        <button
+                            class="btn btn-link dropdown-toggle d-inline-flex align-items-center fw-semibold text-dark text-decoration-none p-0 topLink"
+                            type="button" id="megazinDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-book me-2"></i>ম্যাগাজিন
+                        </button>
+
+                        <!-- dropdown -->
+                        <ul class="dropdown-menu" aria-labelledby="megazinDropdown">
+                            <li><a class="dropdown-item" href="" target="_blank">ঈদ সংখ্যা ২০২৬</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">ঈদ আনন্দ ২০২৬</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">ঈদ আনন্দ ২০২৫</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">স্বাস্থ্য সংখ্যা ২০২৫</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">ঈদ সংখ্যা ২০২৫</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">ঈদ আনন্দ ২০২৪</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">ঈদ সংখ্যা ২০২৪</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">ঈদ সংখ্যা ২০২৩</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">সারাবেলা ম্যাগাজিন</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">টি ২০ ম্যাগাজিন</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">ফ্রি হিট</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">ফ্রি কিক</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a aria-label="আর্কাইভ" href=""
+                            class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+                            <img width="16" src="/asset/icons/archive.webp" class="me-2" alt="archive" />আর্কাইভ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" aria-label="সোশ্যাল মিডিয়া"
+                            class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+                            <i class="fa-solid fa-thumbs-up me-2"></i>সোশ্যাল মিডিয়া
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+                            <i class="fa-solid fa-arrow-down-up-across-line me-2"></i>বাংলা কনভার্টার
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="icons d-flex align-items-center gap-2 ms-auto">
+                <!-- Search Button -->
+                <span class="iconBtn d-flex align-items-center justify-content-center rounded-circle bg-light"
+                    style="width:38px;height:38px;cursor:pointer;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+
+                <!-- Notification Bell Wrapper -->
+                <div class="notifyWrap position-relative">
+                    <samp
+                        class="iconBtn position-relative d-flex align-items-center justify-content-center rounded-circle bg-light"
+                        style="width:38px;height:38px;cursor:pointer;">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notifyDot"></span>
+                    </samp>
+
+                    <!-- Hover Notification Dropdown Panel -->
+                    <div class="notifyPanel">
+                        <div class="notifyInner">
+                            <ul class="list-unstyled mb-0">
+                                <li class="notifyItem">
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <p class="fw-bold mb-1">রোববার চট্টগ্রাম বিশ্ববিদ্যালয়ের সব পরীক্ষা স্থগিত,
+                                            ক্লাস চলবে</p>
+                                        <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>১১ জুলাই,
+                                            ২০২৬</span>
+                                    </a>
+                                </li>
+                                <li class="notifyItem">
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <p class="fw-bold mb-1">টানা বৃষ্টিতে চট্টগ্রামে পাহাড়ধসের শঙ্কা, প্রশাসনের
+                                            মাইকিং</p>
+                                        <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>০৬ জুলাই,
+                                            ২০২৬</span>
+                                    </a>
+                                </li>
+                                <li class="notifyItem">
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <p class="fw-bold mb-1">কক্সবাজারে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান</p>
+                                        <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>১৩ জুন,
+                                            ২০২৬</span>
+                                    </a>
+                                </li>
+                                <li class="notifyItem">
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <p class="fw-bold mb-1">ঈদের ছুটি শেষে ঢাকায় ফিরছেন নগরবাসী</p>
+                                        <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>৩১ মে,
+                                            ২০২৬</span>
+                                    </a>
+                                </li>
+                                <li class="notifyItem">
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <p class="fw-bold mb-1">জিয়াউর রহমানের সমাধিতে শ্রদ্ধা জানালেন প্রধানমন্ত্রী
+                                        </p>
+                                        <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>৩০ মে,
+                                            ২০২৬</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!--catagory nav  -->
+
+    <div class="categoryNav bg-white ">
+        <div class="container-fluid mb-4 shadow-sm">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="collapse navbar-collapse show justify-content-center">
+                    <ul class="navbar-nav align-items-center flex-row flex-wrap justify-content-evenly py-1 gap-4">
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#"><i
+                                    class="fa-solid fa-house"></i></a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">সর্বশেষ</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">জাতীয়</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">রাজনীতি</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">সারাদেশ</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">বিশ্ব</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">খেলা</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">শিক্ষা</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">বাণিজ্য</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">বিনোদন</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">মতামত</a></li>
+                        <li class="nav-item"><a class="catLink nav-link px-2" href="#">ভিডিও</a></li>
+
+                        <!-- =================================
+                         MORE / MEGA MENU
+                    ================================== -->
+
+                        <li class="nav-item2 megaMenuParent fw-bold">
+
+                            <a class="catLink2 nav-link2 px-2 text-black" href="#" aria-label="More categories">
+
+                                <i class="fa-solid fa-bars fs-5"></i>
+
+                            </a>
+
+
+                            <!-- ==============================
+                             MEGA MENU
+                        ================================= -->
+
+                            <div class="megaMenu bg-white shadow-lg border rounded-0">
+
+                                <div class="container-fluid px-4 py-4">
+
+                                    <!-- Date -->
+                                    <div class="border-bottom pb-3 mb-4">
+
+                                        <p class="mb-0 fw-semibold text-dark">
+                                            সোমবার, ১০ আগস্ট ২০২৬, ২৬ শ্রাবণ ১৪৩৩
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- ==========================
+                                     MENU COLUMNS
+                                =========================== -->
+
+                                    <div class="row g-4">
+
+
+                                        <!-- Column 1 -->
+                                        <div class="col-6 col-md">
+
+                                            <ul class="list-unstyled mb-0 fw-bold">
+
+                                                <li class="mb-3">
+                                                    <a href="#" class="megaLink fw-bold text-dark text-decoration-none">
+                                                        সর্বশেষ
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        বাণিজ্য
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        রাজধানী
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        নারী-শিশু
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        রম্যবেলা
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+
+                                        <!-- Column 2 -->
+                                        <div class="col-6 col-md">
+
+                                            <ul class="list-unstyled mb-0">
+
+                                                <li class="mb-3">
+                                                    <a href="#" class="megaLink fw-bold text-dark text-decoration-none">
+                                                        জাতীয়
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        বিনোদন
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        শিল্প-সাহিত্য
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        আইন ও পরামর্শ
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        নির্বাচন
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+
+                                        <!-- Column 3 -->
+                                        <div class="col-6 col-md">
+
+                                            <ul class="list-unstyled mb-0">
+
+                                                <li class="mb-3">
+                                                    <a href="#" class="megaLink fw-bold text-dark text-decoration-none">
+                                                        রাজনীতি
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        মতামত
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        প্রবাস
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        সোশ্যাল মিডিয়া
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        অডিও
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+
+                                        <!-- Column 4 -->
+                                        <div class="col-6 col-md">
+
+                                            <ul class="list-unstyled mb-0">
+
+                                                <li class="mb-3">
+                                                    <a href="#" class="megaLink fw-bold text-dark text-decoration-none">
+                                                        সারাদেশ
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        আইন-আদালত
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        প্রযুক্তি
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        বিচিত্র
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+
+                                        <!-- Column 5 -->
+                                        <div class="col-6 col-md">
+
+                                            <ul class="list-unstyled mb-0">
+
+                                                <li class="mb-3">
+                                                    <a href="#" class="megaLink fw-bold text-dark text-decoration-none">
+                                                        বিশ্ব
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        অপরাধ
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        চাকরি
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        কর্পোরেট
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+
+                                        <!-- Column 6 -->
+                                        <div class="col-6 col-md">
+
+                                            <ul class="list-unstyled mb-0">
+
+                                                <li class="mb-3">
+                                                    <a href="#" class="megaLink fw-bold text-dark text-decoration-none">
+                                                        খেলা
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        স্বাস্থ্য
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        চট্টগ্রাম সারাবেলা
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        পরিবেশ ও জলবায়ু
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+
+                                        <!-- Column 7 -->
+                                        <div class="col-6 col-md">
+
+                                            <ul class="list-unstyled mb-0">
+
+                                                <li class="mb-3">
+                                                    <a href="#" class="megaLink fw-bold text-dark text-decoration-none">
+                                                        শিক্ষা
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        ধর্ম
+                                                    </a>
+                                                </li>
+
+                                                <li class="mb-2">
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        লাইফস্টাইল
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" class="megaLink text-dark text-decoration-none">
+                                                        পিএসআই
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- ==========================
+                                     BOTTOM LINKS
+                                =========================== -->
+
+                                    <div class="border-top pt-3 mt-4">
+
+                                        <div class="d-flex justify-content-center align-items-center flex-wrap gap-4">
+
+                                            <a href="#"
+                                                class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+
+                                                <i class="fa-solid fa-circle-play me-2 iconPink"></i>
+
+                                                ভিডিও স্টোরি
+
+                                            </a>
+
+
+                                            <a href="#"
+                                                class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+
+                                                <i class="fa-solid fa-book-open me-2 iconBlue"></i>
+
+                                                ফটো স্টোরি
+
+                                            </a>
+
+
+                                            <a href="#"
+                                                class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+
+                                                <i class="fa-regular fa-image me-2 iconRed"></i>
+
+                                                ফটোগ্যালারি
+
+                                            </a>
+
+
+                                            <a href="#"
+                                                class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+
+                                                <i class="fa-solid fa-photo-film me-2 iconRed"></i>
+
+                                                ভিডিও গ্যালারি
+
+                                            </a>
+
+
+                                            <a href="#"
+                                                class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+
+                                                <i class="fa-solid fa-wave-square me-2 iconOrange"></i>
+
+                                                অডিও
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                    </ul>
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--
+    
+    Main Grid Content Section 
+    
+    
+    -->
+    <main class=" bg-white">
+        <div class="container-fluid px-lg-4 px-2">
+            <div class="row g-3">
+
+                <!-- LEFT COLUMN (6 Grid Columns) -->
+                <div class="col-lg-6">
+
+                    <!-- Top Featured Main Story Box -->
+                    <div class="card card-custom p-3 mb-3">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-6">
+                                <img src="https://picsum.photos/400/300?random=1" alt="Lead News"
+                                    class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="main-lead-title">চীনের অনৈতিক শর্তে ডিজিটাল স্বপ্নভঙ্গ</h2>
+                                <p class="lead-excerpt mt-2">
+                                    তৃণমূল পর্যায়ে ইন্টারনেটের উচ্চগতি ও আধুনিক ডিজিটাল সেবা পৌঁছে দেওয়ার লক্ষ্য নিয়ে
+                                    শুরু হয়েছিল ‘ডিজিটাল সংযোগ স্থাপন’ (ইডিসি) প্রকল্প...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 1: 3 Column Small News Cards -->
+                    <div class="card card-custom p-3 mb-3">
+                        <div class="row g-3">
+                            <div class="col-md-4 col-6">
+                                <div class="news-card">
+                                    <img src="https://picsum.photos/300/180?random=2" alt="News"
+                                        class="img-fluid rounded mb-2">
+                                    <h3 class="news-title-sm">ঘুপচির ভেতরেই মিলল খুনের ক্লু, ১৬ ঘণ্টায় হত্যার রহস্য
+                                        উদঘাটন</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="news-card">
+                                    <img src="https://picsum.photos/300/180?random=3" alt="News"
+                                        class="img-fluid rounded mb-2">
+                                    <h3 class="news-title-sm">কঠোর মূল্যায়নে সামগ্রিক ফল বিপর্যয়</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="news-card">
+                                    <img src="https://picsum.photos/300/180?random=4" alt="News"
+                                        class="img-fluid rounded mb-2">
+                                    <h3 class="news-title-sm">কলম্বিয়ায় শক্তিশালী ভূমিকম্পে নিহত বেড়ে ১৩২</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: 3 Column Small News Cards -->
+                    <div class="card card-custom p-3">
+                        <div class="row g-3">
+                            <div class="col-md-4 col-6">
+                                <div class="news-card">
+                                    <img src="https://picsum.photos/300/180?random=5" alt="News"
+                                        class="img-fluid rounded mb-2">
+                                    <h3 class="news-title-sm">জুলাই শহীদদের স্বপ্ন বাস্তবায়নে কাজ করছে সরকার</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="news-card">
+                                    <img src="https://picsum.photos/300/180?random=6" alt="News"
+                                        class="img-fluid rounded mb-2">
+                                    <h3 class="news-title-sm">এসএসসি ফল প্রত্যাশিত হয়নি? জেনে নিন আবেদন নিয়ম</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="news-card">
+                                    <img src="https://picsum.photos/300/180?random=7" alt="News"
+                                        class="img-fluid rounded mb-2">
+                                    <h3 class="news-title-sm">এমপি নাছির উদ্দিনের গলায় দা ঠেকিয়ে সম্পত্তির দলিল</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- MIDDLE COLUMN (3 Grid Columns) -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom p-3 h-100">
+
+                        <!-- Top Story in Middle Column -->
+                        <div class="border-bottom pb-3 mb-3">
+                            <img src="https://picsum.photos/400/220?random=8" alt="Middle Top News"
+                                class="img-fluid rounded mb-2">
+                            <h3 class="mid-lead-title">লিবিয়ার সবচেয়ে বড় তেল শোধনাগারে আগুন</h3>
+                        </div>
+
+                        <!-- Horizontal List News Items -->
+                        <div class="list-news-wrapper d-flex flex-column gap-3">
+                            <div class="d-flex gap-2 border-bottom pb-2">
+                                <img src="https://picsum.photos/100/70?random=9" alt="Thumb" class="thumb-img rounded">
+                                <h4 class="list-news-title">ইরানের কাছে ক্ষতিপূরণ চাইবে যুক্তরাষ্ট্র: ট্রাম্প</h4>
+                            </div>
+                            <div class="d-flex gap-2 border-bottom pb-2">
+                                <img src="https://picsum.photos/100/70?random=10" alt="Thumb" class="thumb-img rounded">
+                                <h4 class="list-news-title">আনোয়ার ইব্রাহিমের দ্রুত আরোগ্য কামনা প্রধানমন্ত্রীর</h4>
+                            </div>
+                            <div class="d-flex gap-2 border-bottom pb-2">
+                                <img src="https://picsum.photos/100/70?random=11" alt="Thumb" class="thumb-img rounded">
+                                <h4 class="list-news-title">মানবাধিকার কমিশন আইন চূড়ান্ত করার প্রস্তাব</h4>
+                            </div>
+                            <div class="d-flex gap-2 border-bottom pb-2">
+                                <img src="https://picsum.photos/100/70?random=12" alt="Thumb" class="thumb-img rounded">
+                                <h4 class="list-news-title">কলম্বিয়ায় শক্তিশালী ভূমিকম্পের আঘাত</h4>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="https://picsum.photos/100/70?random=13" alt="Thumb" class="thumb-img rounded">
+                                <h4 class="list-news-title">ভারতের মানচিত্রে অরুণাচলের ২৭ স্থানের নাম ভুক্তি</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN (Sidebar) -->
+                <div class="col-lg-3 col-md-6">
+
+                    <!-- Video/Photo Stories Card -->
+                    <div class="card border-0 shadow-sm rounded-3 p-3 mb-3">
+
+                        <!-- Header Tabs -->
+                        <div class="d-flex align-items-center gap-3 border-bottom pb-2 mb-3">
+                            <a href="#"
+                                class="text-decoration-none fw-bold text-dark fs-5 d-flex align-items-center gap-1 active-story-tab">
+                                <span class="story-tab-icon video-icon">📷</span> ভিডিও স্টোরি
+                            </a>
+                            <a href="#"
+                                class="text-decoration-none fw-bold text-muted fs-5 d-flex align-items-center gap-1">
+                                <span class="story-tab-icon photo-icon">📖</span> ফটো স্টোরি
+                            </a>
+                        </div>
+
+                        <!-- Reel Carousel Wrapper -->
+                        <div class="story-slider-wrapper position-relative overflow-hidden">
+
+                            <!-- Cards Container -->
+                            <div class="d-flex gap-2 story-slider-track" id="storySliderTrack">
+
+                                <!-- Story Card 1 -->
+                                <div class="story-card position-relative rounded-3 overflow-hidden flex-shrink-0">
+                                    <img src="https://picsum.photos/300/500?random=14" alt="Video Thumb"
+                                        class="w-100 h-100 object-fit-cover">
+
+                                    <!-- View Counter Pill -->
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 badge bg-dark bg-opacity-50 rounded-pill d-flex align-items-center gap-1 px-2 py-1 fs-7">
+                                        <i class="fa-solid fa-eye fs-7"></i> 1.7k
+                                    </span>
+
+                                    <!-- Center Play Button -->
+                                    <div
+                                        class="position-absolute top-50 start-50 translate-middle play-btn-circle d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-play text-white fs-4 ms-1"></i>
+                                    </div>
+
+                                    <!-- Bottom Gradient Overlay & Title -->
+                                    <div
+                                        class="story-title-overlay position-absolute bottom-0 start-0 w-100 p-2 text-white">
+                                        <p class="mb-0 fw-bold lh-sm fs-7">রাস্তায় ময়লা ফেলায় দোকান মালিককে দিয়ে
+                                            সড়ক পরিষ্কার করালেন ম্যাজিস্ট্রেট</p>
+                                    </div>
+                                </div>
+
+                                <!-- Story Card 2 -->
+                                <div class="story-card position-relative rounded-3 overflow-hidden flex-shrink-0">
+                                    <img src="https://picsum.photos/300/500?random=15" alt="Video Thumb"
+                                        class="w-100 h-100 object-fit-cover">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 badge bg-dark bg-opacity-50 rounded-pill d-flex align-items-center gap-1 px-2 py-1 fs-7">
+                                        <i class="fa-solid fa-eye fs-7"></i> 5.4k
+                                    </span>
+
+                                    <div
+                                        class="position-absolute top-50 start-50 translate-middle play-btn-circle d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-play text-white fs-4 ms-1"></i>
+                                    </div>
+
+                                    <div
+                                        class="story-title-overlay position-absolute bottom-0 start-0 w-100 p-2 text-white">
+                                        <p class="mb-0 fw-bold lh-sm fs-7">পরবর্তী রাষ্ট্রপতি কে হবেন? যা জানালেন রুহুল
+                                            কবির রিজভী</p>
+                                    </div>
+                                </div>
+
+                                <!-- Story Card 3 -->
+                                <div class="story-card position-relative rounded-3 overflow-hidden flex-shrink-0">
+                                    <img src="https://picsum.photos/300/500?random=16" alt="Video Thumb"
+                                        class="w-100 h-100 object-fit-cover">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 badge bg-dark bg-opacity-50 rounded-pill d-flex align-items-center gap-1 px-2 py-1 fs-7">
+                                        <i class="fa-solid fa-eye fs-7"></i> 7.4k
+                                    </span>
+
+                                    <div
+                                        class="position-absolute top-50 start-50 translate-middle play-btn-circle d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-play text-white fs-4 ms-1"></i>
+                                    </div>
+
+                                    <div
+                                        class="story-title-overlay position-absolute bottom-0 start-0 w-100 p-2 text-white">
+                                        <p class="mb-0 fw-bold lh-sm fs-7">এ জীবন পুলিশের</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Floating Navigation Arrows -->
+                            <button
+                                class="btn btn-light rounded-circle shadow-sm story-nav-btn prev-btn position-absolute top-50 start-0 translate-middle-y d-none"
+                                id="prevStoryBtn">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button
+                                class="btn btn-light rounded-circle shadow-sm story-nav-btn next-btn position-absolute top-50 end-0 translate-middle-y"
+                                id="nextStoryBtn">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Banner Ad Slot -->
+                    <div class="card border-0 shadow-sm rounded-3 p-2 text-center">
+                        <img src="/asset/img/Screenshot 2026-08-18 120521.png" alt="Sidebar Banner Ad"
+                            class="img-fluid rounded w-100">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ==========================================================
+     VIDEO SECTION
+========================================================== -->
+
+        <section class="video-section container-fluid px-3 py-3 my-4">
+
+
+            <!-- ======================================================
+         HEADER
+    ======================================================= -->
+
+            <div class="d-flex
+                justify-content-between
+                align-items-center
+                mb-3">
+
+
+                <!-- LEFT -->
+                <div class="d-flex align-items-center gap-3">
+
+                    <div class="video-title-icon">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </div>
+
+
+                    <h2 class="video-title mb-0">
+                        ভিডিও
+                    </h2>
+
+                </div>
+
+
+                <!-- RIGHT -->
+                <a href="#" class="all-video">
+
+                    <span>
+                        সব ভিডিও
+                    </span>
+
+
+                    <span class="all-video-arrow">
+
+                        <i class="fa-solid fa-arrow-right fs-5"></i>
+
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- ======================================================
+         SLIDER
+    ======================================================= -->
+
+            <div class="video-slider">
+
+
+                <!-- PREVIOUS BUTTON -->
+
+                <button type="button" id="videoPrev" class="slider-button slider-prev" aria-label="Previous video">
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+
+                <!-- ==================================================
+             VIEWPORT
+        =================================================== -->
+
+                <div class="video-viewport">
+
+
+                    <!-- =================================================
+                 TRACK
+            ================================================== -->
+
+                    <div id="videoTrack" class="video-track">
+
+
+
+                        <!-- ============================================
+                     CARD 1
+                ============================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-card-image">
+
+                                <img src="asset/img/cover_photo-5724.webp" alt="Political news">
+
+
+                                <button type="button" class="play-button">
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <h3 class="video-card-title">
+
+                                প্রধানমন্ত্রীর কাছে নতুন মন্ত্রণালয়
+                                চাইলেন ফজলুর রহমান
+
+                            </h3>
+
+
+                            <div class="video-time">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    ১৬ আগস্ট, ২০২৬
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ============================================
+                     CARD 2
+                ============================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-card-image">
+
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+                                    alt="News video">
+
+
+                                <button type="button" class="play-button">
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <h3 class="video-card-title">
+
+                                খালেদা জিয়ার জন্মদিন উপলক্ষে
+                                মসজিদ ও মাদ্রাসায় অনুদান বিএনপি নেতার
+
+                            </h3>
+
+
+                            <div class="video-time">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    ১৬ আগস্ট, ২০২৬
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ============================================
+                     CARD 3
+                ============================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-card-image">
+
+                                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1000&q=80"
+                                    alt="Education news">
+
+
+                                <button type="button" class="play-button">
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <h3 class="video-card-title">
+
+                                দুই ধাপে বাস্তবায়ন হবে নবম
+                                পে-স্কেল, বেতন বাড়বে ১০০% পর্যন্ত
+
+                            </h3>
+
+
+                            <div class="video-time">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    ১৫ আগস্ট, ২০২৬
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ============================================
+                     CARD 4
+                ============================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-card-image">
+
+                                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1000&q=80"
+                                    alt="News conference">
+
+
+                                <button type="button" class="play-button">
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <h3 class="video-card-title">
+
+                                খাতায় ৩১, ক্লাসে ২ জন নিয়ে
+                                আমেনা বেগম স্কুল
+
+                            </h3>
+
+
+                            <div class="video-time">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    ১৫ আগস্ট, ২০২৬
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ============================================
+                     CARD 5
+                ============================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-card-image">
+
+                                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80"
+                                    alt="Business news">
+
+
+                                <button type="button" class="play-button">
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <h3 class="video-card-title">
+
+                                দেশের অর্থনীতি নিয়ে গুরুত্বপূর্ণ
+                                সিদ্ধান্ত জানালেন বিশেষজ্ঞরা
+
+                            </h3>
+
+
+                            <div class="video-time">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    ১৪ আগস্ট, ২০২৬
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ============================================
+                     CARD 6
+                ============================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-card-image">
+
+                                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80"
+                                    alt="Breaking news">
+
+
+                                <button type="button" class="play-button">
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <h3 class="video-card-title">
+
+                                রাজধানীতে নতুন কর্মসূচির
+                                ঘোষণা আসছে আজ
+
+                            </h3>
+
+
+                            <div class="video-time">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    ১৪ আগস্ট, ২০২৬
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ============================================
+                     CARD 7
+                ============================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-card-image">
+
+                                <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=80"
+                                    alt="Newspaper news">
+
+
+                                <button type="button" class="play-button">
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <h3 class="video-card-title">
+
+                                নতুন পরিকল্পনা নিয়ে সংবাদ
+                                সম্মেলনে বিস্তারিত বক্তব্য
+
+                            </h3>
+
+
+                            <div class="video-time">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    ১৩ আগস্ট, ২০২৬
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- ============================================
+                     CARD 8
+                ============================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-card-image">
+
+                                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80"
+                                    alt="Office news">
+
+
+                                <button type="button" class="play-button">
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <h3 class="video-card-title">
+
+                                নতুন উদ্যোগ বাস্তবায়নে
+                                কাজ শুরু করেছে কর্তৃপক্ষ
+
+                            </h3>
+
+
+                            <div class="video-time">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <span>
+                                    ১৩ আগস্ট, ২০২৬
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- NEXT BUTTON -->
+
+                <button type="button" id="videoNext" class="slider-button slider-next" aria-label="Next video">
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <div class="container py-4 d-flex justify-content-center g-2">
+            <div class="row g-3">
+
+                <!-- মতামত (Opinion) -->
+                <div class="col-lg-4 border">
+                    <div class="panel">
+                        <div class="panel-header">
+                            <span class="icon-box"><i class="bi bi-chat-square-text-fill"></i></span>
+                            মতামত
+                        </div>
+
+                        <div id="opinionCarousel" class="carousel slide position-relative" data-bs-ride="false">
+                            <div class="carousel-inner">
+
+                                <!-- Slide 1 -->
+                                <div class="carousel-item active">
+                                    <div class="opinion-item">
+                                        <img src="/asset/img/cover_photo-5724.webp" alt="">
+                                        <div>
+                                            <h6>মার্কো রুবিও ট্রাম্পের মতোই বিপজ্জনক</h6>
+                                            <p>ওয়াশিংটন ডিসির পররাষ্ট্র দপ্তর থেকে দেখলে মনে হয়, বিশ্ব যেন আগুনে
+                                                জ্বলছে। তবে এর জন্য রেকর্ড তাপপ্রবাহ দায়ী নয়...</p>
+                                        </div>
+                                    </div>
+                                    <div class="opinion-item">
+                                        <img src="https://placehold.co/56x56/e5001f/fff?text=%F0%9F%8F%86" alt="">
+                                        <div>
+                                            <h6>কোটি হৃদয়ে উৎসব</h6>
+                                            <p>অস্ট্রেলিয়ার মাটিতে প্রথমবারের মতো টেস্ট শাপুটে জয় পেয়েছে টাইগাররা। এ
+                                                ঐতিহাসিক জয়ের সঙ্গে সঙ্গী সবাইকে...</p>
+                                        </div>
+                                    </div>
+                                    <div class="opinion-item">
+                                        <img src="https://placehold.co/56x56/e5001f/fff?text=%F0%9F%8F%97" alt="">
+                                        <div>
+                                            <h6>অবকাঠামো নির্মাণে গুণগত মান নিশ্চিত করতে অর্থবছর 'এপ্রিল-মার্চ' করার
+                                                প্রস্তাব</h6>
+                                            <p>বার্ষিক উন্নয়ন কর্মসূচির (এডিপি) আওতায় দেশের অবকাঠামো নির্মাণ প্রকল্পের
+                                                গুণগত মান নিশ্চিত করা, নির্ধারিত সময়ে...</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="carousel-item">
+                                    <div class="opinion-item">
+                                        <img src="https://placehold.co/56x56/e5001f/fff?text=%F0%9F%93%88" alt="">
+                                        <div>
+                                            <h6>রপ্তানি খাতে বৈচিত্র্য আনার এখনই সময়</h6>
+                                            <p>একক পণ্যের ওপর নির্ভরতা দীর্ঘমেয়াদে ঝুঁকিপূর্ণ। নতুন বাজার ও নতুন পণ্যে
+                                                বিনিয়োগ ছাড়া টেকসই প্রবৃদ্ধি সম্ভব নয়...</p>
+                                        </div>
+                                    </div>
+                                    <div class="opinion-item">
+                                        <img src="https://placehold.co/56x56/e5001f/fff?text=%F0%9F%8E%93" alt="">
+                                        <div>
+                                            <h6>শিক্ষার মান নিয়ে প্রশ্ন কেন থেকেই যাচ্ছে</h6>
+                                            <p>পাঠ্যক্রম বদলালেও শ্রেণিকক্ষে শিক্ষার বাস্তব চিত্র খুব একটা বদলায়নি।
+                                                শিক্ষক প্রশিক্ষণ ও অবকাঠামোতে জোর দেওয়া জরুরি...</p>
+                                        </div>
+                                    </div>
+                                    <div class="opinion-item">
+                                        <img src="https://placehold.co/56x56/e5001f/fff?text=%F0%9F%8C%A6" alt="">
+                                        <div>
+                                            <h6>জলবায়ু ঝুঁকি মোকাবিলায় স্থানীয় পরিকল্পনা জরুরি</h6>
+                                            <p>উপকূলীয় এলাকায় বাড়ছে লবণাক্ততা ও নদীভাঙন। কেন্দ্রীয় নীতির পাশাপাশি
+                                                স্থানীয় পর্যায়ে অভিযোজন পরিকল্পনা দরকার...</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="carousel-item">
+                                    <div class="opinion-item">
+                                        <img src="https://placehold.co/56x56/e5001f/fff?text=%F0%9F%9A%A6" alt="">
+                                        <div>
+                                            <h6>যানজট নিরসনে দরকার সমন্বিত পরিবহন নীতি</h6>
+                                            <p>শুধু রাস্তা বাড়িয়ে যানজট কমানো যাবে না। গণপরিবহন ব্যবস্থাকে অগ্রাধিকার
+                                                দিতে হবে সবার আগে...</p>
+                                        </div>
+                                    </div>
+                                    <div class="opinion-item">
+                                        <img src="https://placehold.co/56x56/e5001f/fff?text=%F0%9F%92%BB" alt="">
+                                        <div>
+                                            <h6>ডিজিটাল নিরাপত্তায় তরুণদের সচেতন করতে হবে এখনই</h6>
+                                            <p>প্রতিনিয়ত বাড়ছে সাইবার প্রতারণার ঘটনা। পরিবার ও প্রতিষ্ঠান পর্যায়ে
+                                                সচেতনতামূলক কার্যক্রম বাড়ানো প্রয়োজন...</p>
+                                        </div>
+                                    </div>
+                                    <div class="opinion-item">
+                                        <img src="https://placehold.co/56x56/e5001f/fff?text=%F0%9F%8C%BE" alt="">
+                                        <div>
+                                            <h6>কৃষিতে প্রযুক্তির ব্যবহার বাড়ানোর বিকল্প নেই</h6>
+                                            <p>জলবায়ু পরিবর্তনের প্রভাবে ফলন অনিশ্চিত হয়ে উঠছে। আধুনিক প্রযুক্তি ছাড়া
+                                                খাদ্য নিরাপত্তা নিশ্চিত করা কঠিন...</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#opinionCarousel" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#opinionCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#opinionCarousel" data-bs-slide-to="2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- অনলাইন জরিপ (Online Survey) -->
+                <div class="col-lg-4 border ">
+                    <div class="panel">
+                        <div class="panel-header">
+                            <span class="icon-box"><i class="bi bi-bar-chart-fill"></i></span>
+                            অনলাইন জরিপ
+                        </div>
+
+                        <div class="survey-meta">
+                            <span><i class="bi bi-clock"></i>১৮ আগস্ট ২০২৬, ০৮:৪০ এএম</span>
+                            <span class="survey-download"><i class="bi bi-download"></i></span>
+                        </div>
+
+                        <div class="survey-img-wrap">
+                            <img src="/asset/img/photo-300.jpg" alt="survey">
+                        </div>
+
+                        <div class="survey-question">
+                            সরকারের কাছে জনগণ যে নতুন সম্ভাবনা আশা করেছিল, তা চরম হতাশায় পর্যবসিত হয়েছে। এবি পার্টির
+                            চেয়ারম্যান মজিবুর রহমান মঞ্জুর এই মন্তব্যের সঙ্গে আপনিও কি একমত?
+                        </div>
+
+                        <div class="survey-options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="surveyOption" id="opt1">
+                                <label class="form-check-label w-100" for="opt1">হ্যাঁ</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="surveyOption" id="opt2">
+                                <label class="form-check-label w-100" for="opt2">না</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="surveyOption" id="opt3">
+                                <label class="form-check-label w-100" for="opt3">মন্তব্য নেই</label>
+                            </div>
+                        </div>
+
+                        <div class="survey-total">মোট ভোটদাতা: ৩৫৫ জন</div>
+
+                        <div class="survey-share">
+                            <a href="#" class="sh-fb"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="sh-msgr"><i class="bi bi-messenger"></i></a>
+                            <a href="#" class="sh-wa"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="sh-x"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="sh-in"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="sh-cp"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- সর্বশেষ / জনপ্রিয় (Latest / Popular) -->
+                <div class="col-lg-4 border">
+                    <div class="panel">
+                        <ul class="nav nav-tabs nav-tabs-custom" id="newsTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="latest-tab" data-bs-toggle="tab"
+                                    data-bs-target="#latest-pane" type="button" role="tab">সর্বশেষ</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="popular-tab" data-bs-toggle="tab"
+                                    data-bs-target="#popular-pane" type="button" role="tab">জনপ্রিয়</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="newsTabContent">
+
+                            <!-- সর্বশেষ -->
+                            <div class="tab-pane fade show active" id="latest-pane" role="tabpanel">
+                                <ul class="latest-list">
+                                    <li>
+                                        <span class="num-badge">১</span>
+                                        <a href="#">দেশের সব সমুদ্রবন্দরে ৩ নম্বর সতর্কতা সংকেত</a>
+                                    </li>
+                                    <li>
+                                        <span class="num-badge">২</span>
+                                        <a href="#">ইরানের সঙ্গে সমঝোতার মেয়াদ বাড়াবে না যুক্তরাষ্ট্র: ট্রাম্প</a>
+                                    </li>
+                                    <li>
+                                        <span class="num-badge">৩</span>
+                                        <a href="#">পা বেঁধে পানিতে ফেলে দুই ছাগল হত্যার অভিযোগে মামলা</a>
+                                    </li>
+                                    <li>
+                                        <span class="num-badge">৪</span>
+                                        <a href="#">মোটরসাইকেল খাদে পড়ে প্রাণ গেল ২ যুবকের</a>
+                                    </li>
+                                    <li>
+                                        <span class="num-badge">৫</span>
+                                        <a href="#">মায়ের সঙ্গে স্কুলে যাওয়া হলো না শিশুর</a>
+                                    </li>
+                                    <li>
+                                        <span class="num-badge">৬</span>
+                                        <a href="#">নখের ভেতর ময়লা থাকলে ফরজ গোসল শুদ্ধ হবে কি?</a>
+                                    </li>
+                                    <li>
+                                        <span class="num-badge">৭</span>
+                                        <a href="#">রাষ্ট্রপতি নির্বাচন: আজ শেষ হচ্ছে প্রার্থিতা প্রত্যাহারের সময়</a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="all-news-btn">সর্বশেষ সব খবর</a>
+                            </div>
+
+                            <!-- জনপ্রিয় -->
+                            <div class="tab-pane fade" id="popular-pane" role="tabpanel">
+                                <ul class="latest-list">
+                                    <li>
+                                        <span class="num-badge ">১</span>
+                                        <a href="#">ঢাকায় বৃষ্টির পূর্বাভাস, জলাবদ্ধতার শঙ্কা</a>
+
+                                    </li>
+                                    <li>
+                                        <span class="num-badge ">২</span>
+                                        <a href="#">সোনার দামে নতুন রেকর্ড, ভরিতে বাড়ল যত টাকা</a>
+
+                                    </li>
+                                    <li>
+                                        <span class="num-badge ">৩</span>
+                                        <a href="#">এইচএসসির ফল প্রকাশ, পাসের হার কত</a>
+
+                                    </li>
+                                    <li>
+                                        <span class="num-badge ">৪</span>
+                                        <a href="#">ডলারের বিপরীতে টাকার দরে বড় পরিবর্তন</a>
+
+                                    </li>
+                                    <li>
+                                        <span class="num-badge ">৫</span>
+                                        <a href="#">প্রিমিয়ার লিগে চমক দেখাল নতুন দল</a>
+
+                                    </li>
+                                    <li>
+                                        <span class="num-badge ">৬</span>
+                                        <a href="#">ঈদযাত্রায় টিকিট বিক্রি শুরু আজ থেকে</a>
+
+                                    </li>
+                                    <li>
+                                        <span class="num-badge ">৭</span>
+                                        <a href="#">নতুন মোবাইল ইন্টারনেট প্যাকেজ নীতিমালা ঘোষণা</a>
+
+                                    </li>
+                                </ul>
+                                <a href="#" class="all-news-btn">জনপ্রিয় সব খবর</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ==========================================================
+     national SECTION
+========================================================== -->
+
+
+        <section class="national-news-section">
+
+            <div class="container-fluid news-wrapper">
+
+                <div class="section-header">
+
+                    <!-- Left: Section Name -->
+                    <div class="section-title-wrapper">
+
+                        <!-- Small Red Icon -->
+                        <span class="national-icon">
+                            <span></span>
+                            <span></span>
+                        </span>
+
+                        <h2 class="section-title">জাতীয়</h2>
+
+                    </div>
+
+                    <!-- Right: Arrow -->
+                    <a href="#" class="section-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- =================================================
+                 NEWS CONTENT
+                 
+                 Bootstrap grid:
+                 - News column 1 = 4/12
+                 - News column 2 = 4/12
+                 - News column 3 = 4/12
+                 
+                 The whole news area intentionally does NOT occupy
+                 the full screen, leaving space on the right for
+                 future advertisement.
+            ================================================== -->
+
+                <div class="news-content">
+
+                    <div class="row g-0">
+
+
+                        <!-- =================================================
+                         COLUMN 1
+                         One large news
+                    ================================================== -->
+                        <div class="col-4">
+
+                            <article class="featured-news">
+
+                                <!-- Image + Title are inside SAME link -->
+                                <a href="#" class="news-link news-hover-group">
+
+                                    <!-- Main Image -->
+                                    <div class="featured-image">
+                                        <img src="asset/img/image-319639.webp" alt="জাতীয় সংবাদ">
+                                    </div>
+
+                                    <!-- Main Title -->
+                                    <h3 class="featured-title">
+                                        রাষ্ট্রপতি নির্বাচনে যে প্রক্রিয়ায় ভোট দেবেন সংসদ সদস্যরা
+                                    </h3>
+
+                                </a>
+
+
+                                <!-- Description -->
+                                <p class="featured-description">
+                                    আগামী ২০ আগস্ট জাতীয় সংসদ ভবনের সংসদ কক্ষে
+                                    রাষ্ট্রপতি নির্বাচনের ভোট দেবেন সংসদ সদস্যরা।
+                                    দুপুর ১টা থেকে বিকেল ৩টা পর্যন্ত ভোট অনুষ্ঠিত হবে।
+                                </p>
+
+
+                                <!-- Time -->
+                                <div class="news-time">
+                                    <i class="bi bi-clock"></i>
+                                    <span>১৩ মিনিট আগে</span>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                         COLUMN 2
+                         Four news with image + title
+                    ================================================== -->
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="middle-news-column">
+
+
+                                <!-- NEWS 01 -->
+                                <article class="small-news">
+
+                                    <a href="#" class="news-link news-hover-group">
+
+                                        <div class="small-news-image">
+                                            <img src="asset/img/cover_photo-5724.webp" alt="তিন জেলার ডিসি প্রত্যাহার">
+                                        </div>
+
+                                        <div class="small-news-content">
+
+                                            <h3 class="small-news-title">
+                                                তিন জেলার ডিসি প্রত্যাহার
+                                            </h3>
+
+                                            <div class="news-time">
+                                                <i class="bi bi-clock"></i>
+                                                <span>১১ ঘণ্টা আগে</span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 02 -->
+                                <article class="small-news">
+
+                                    <a href="#" class="news-link news-hover-group">
+
+                                        <div class="small-news-image">
+                                            <img src="images/news-2.jpg" alt="আ লীগের আমাদের ভিলার রাখতে চান না সিলভি">
+                                        </div>
+
+                                        <div class="small-news-content">
+
+                                            <h3 class="small-news-title">
+                                                আ. লীগের আমাদের ভিলার রাখতে চান না সিলভি
+                                            </h3>
+
+                                            <div class="news-time">
+                                                <i class="bi bi-clock"></i>
+                                                <span>১১ ঘণ্টা আগে</span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 03 -->
+                                <article class="small-news">
+
+                                    <a href="#" class="news-link news-hover-group">
+
+                                        <div class="small-news-image">
+                                            <img src="asset/img/photo-300.jpg"
+                                                alt="গণধরপুর পানি শোধনাগার প্রকল্প নিয়ে টানাপোড়েন">
+                                        </div>
+
+                                        <div class="small-news-content">
+
+                                            <h3 class="small-news-title">
+                                                গনধরপুর পানি শোধনাগার প্রকল্প নিয়ে টানাপোড়েন
+                                            </h3>
+
+                                            <div class="news-time">
+                                                <i class="bi bi-clock"></i>
+                                                <span>১১ ঘণ্টা আগে</span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 04 -->
+                                <article class="small-news">
+
+                                    <a href="#" class="news-link news-hover-group">
+
+                                        <div class="small-news-image">
+                                            <img src="images/news-4.jpg" alt="নতুন কমিশন গতি পাবে দুর্নীতি দমন কমিশন">
+                                        </div>
+
+                                        <div class="small-news-content">
+
+                                            <h3 class="small-news-title">
+                                                নতুন কমিশন গতি পাবে দুর্নীতি দমন কমিশন
+                                            </h3>
+
+                                            <div class="news-time">
+                                                <i class="bi bi-clock"></i>
+                                                <span>১১ ঘণ্টা আগে</span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                         COLUMN 3
+                         Five news - title only
+                    ================================================== -->
+                        <div class="col-lg-4 col-md-12">
+
+                            <div class="right-news-column">
+
+
+                                <!-- NEWS 01 -->
+                                <article class="headline-news">
+
+                                    <a href="#" class="headline-link">
+
+                                        <h3 class="headline-title">
+                                            <i class="bi bi-chevron-right"></i>
+                                            ৫০ ফুট উঁচু ভবন
+                                        </h3>
+
+                                        <div class="news-time">
+                                            <i class="bi bi-clock"></i>
+                                            <span>১১ ঘণ্টা আগে</span>
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 02 -->
+                                <article class="headline-news">
+
+                                    <a href="#" class="headline-link">
+
+                                        <h3 class="headline-title">
+                                            <i class="bi bi-chevron-right"></i>
+                                            দেশের বিভিন্ন অঞ্চলে বৃষ্টির সম্ভাবনা, কোথাও ভারী বর্ষণ
+                                        </h3>
+
+                                        <div class="news-time">
+                                            <i class="bi bi-clock"></i>
+                                            <span>৩ ঘণ্টা আগে</span>
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 03 -->
+                                <article class="headline-news">
+
+                                    <a href="#" class="headline-link">
+
+                                        <h3 class="headline-title">
+                                            <i class="bi bi-chevron-right"></i>
+                                            ঢাকা-অস্ট্রেলিয়া এগ্রিমেন্ট এক্সপ্রেসওয়ের কাজ নিয়ে সেতু সচিবের সঙ্গে বৈঠক
+                                        </h3>
+
+                                        <div class="news-time">
+                                            <i class="bi bi-clock"></i>
+                                            <span>৯ ঘণ্টা আগে</span>
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 04 -->
+                                <article class="headline-news">
+
+                                    <a href="#" class="headline-link">
+
+                                        <h3 class="headline-title">
+                                            <i class="bi bi-chevron-right"></i>
+                                            সংসদ গেলে প্রধানমন্ত্রী তারেক রহমানকে ঘিরে সম্ভাবনা নিয়ে বৈঠক
+                                        </h3>
+
+                                        <div class="news-time">
+                                            <i class="bi bi-clock"></i>
+                                            <span>১১ ঘণ্টা আগে</span>
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 05 -->
+                                <article class="headline-news">
+
+                                    <a href="#" class="headline-link">
+
+                                        <h3 class="headline-title">
+                                            <i class="bi bi-chevron-right"></i>
+                                            আইনজীবীদের পেশাগত মানোন্নয়নের দাবিতে দুপরে এসে স্মারকলিপি দেওয়ার আহ্বান
+                                            অ্যাডভোকেটদের
+                                        </h3>
+
+                                        <div class="news-time">
+                                            <i class="bi bi-clock"></i>
+                                            <span>১১ ঘণ্টা আগে</span>
+                                        </div>
+
+                                    </a>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+         POLITICS NEWS SECTION
+    ========================================================== -->
+
+        <section class="politics-section container ms-4">
+
+            <!-- Section Header -->
+            <div class="politics-header d-flex align-items-center justify-content-between">
+
+                <div class="d-flex align-items-center">
+
+                    <span class="politics-icon me-2">
+                        <span></span>
+                        <span></span>
+                    </span>
+
+                    <h2 class="politics-title mb-0">
+                        রাজনীতি
+                    </h2>
+
+                </div>
+
+                <a href="#" class="section-arrow text-decoration-none">
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- News Area -->
+            <div class="politics-news-area">
+
+                <div class="row g-0">
+
+
+                    <!-- =================================================
+                 LEFT FEATURED NEWS
+            ================================================== -->
+
+                    <div class="col-lg-4 border-end">
+
+                        <article class="featured-news pe-3">
+
+                            <a href="#" class="featured-link text-decoration-none">
+
+                                <div class="overflow-hidden rounded">
+
+                                    <img src="asset/img/photo-300.jpg" class="img-fluid w-100 featured-img"
+                                        alt="চিকিৎসকের ওপর হামলার ঘটনায় বিএনপির স্বাস্থ্যবিষয়ক সম্পাদকের নিন্দা">
+
+                                </div>
+
+
+                                <h3 class="featured-title mt-3 mb-0">
+
+                                    চিকিৎসকের ওপর হামলার ঘটনায়
+                                    বিএনপির স্বাস্থ্যবিষয়ক সম্পাদকের
+                                    নিন্দা
+
+                                </h3>
+
+                            </a>
+
+
+                            <p class="featured-description mt-3 mb-1">
+
+                                ঢাকা মেডিকেল কলেজ হাসপাতালের চিকিৎসক
+                                অধ্যাপক ডা. মো. আসাদুর রহমানের ওপর হামলার
+                                ঘটনায় গভীর উদ্বেগ ও নিন্দা জানিয়েছেন বিএনপির...
+
+                            </p>
+
+
+                            <div class="news-time">
+
+                                <i class="bi bi-clock"></i>
+                                <span>১০ ঘণ্টা আগে</span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                 RIGHT SIDE
+                 3 COLUMNS
+            ================================================== -->
+
+                    <div class="col-lg-8">
+
+                        <div class="row g-0">
+
+
+                            <!-- =================================================
+                         COLUMN 01
+                    ================================================== -->
+
+                            <div class="col-md-4 politics-news-column px-2">
+
+
+                                <!-- NEWS 01 -->
+
+                                <article class="politics-news-item">
+
+                                    <a href="#" class="news-link text-decoration-none">
+
+                                        <div class="overflow-hidden rounded">
+
+                                            <img src="asset/img/cover_photo-5724.webp" class="img-fluid w-100 news-img"
+                                                alt="মারা গেছেন স্বামী">
+
+                                        </div>
+
+
+                                        <h3 class="news-title mt-2 mb-0">
+
+                                            মারা গেছেন স্বামী, প্যারোলে
+                                            মুক্তি চাওয়া হবে সাবেক
+                                            শিক্ষামন্ত্রী দীপু মনি
+
+                                        </h3>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 04 -->
+
+                                <article class="politics-news-item second-news">
+
+                                    <a href="#" class="news-link text-decoration-none">
+
+                                        <div class="overflow-hidden rounded">
+
+                                            <img src="images/politics-4.jpg" class="img-fluid w-100 news-img"
+                                                alt="শিক্ষাপ্রতিষ্ঠানে ছেলে মেয়েদের আলাদা ক্লাসরুম">
+
+                                        </div>
+
+
+                                        <h3 class="news-title mt-2 mb-0">
+
+                                            শিক্ষাপ্রতিষ্ঠানে ছেলে-
+                                            মেয়েদের আলাদা ক্লাসরুম
+                                            চালুর দাবি ছাত্র ইউনিয়নের
+
+                                        </h3>
+
+                                    </a>
+
+                                </article>
+
+                            </div>
+
+
+
+                            <!-- =================================================
+                         COLUMN 02
+                    ================================================== -->
+
+                            <div class="col-md-4 politics-news-column px-2">
+
+
+                                <!-- NEWS 02 -->
+
+                                <article class="politics-news-item">
+
+                                    <a href="#" class="news-link text-decoration-none">
+
+                                        <div class="overflow-hidden rounded">
+
+                                            <img src="asset/img/photo-300.jpg" class="img-fluid w-100 news-img"
+                                                alt="রাজনীতির সদরে অন্দরে">
+
+                                        </div>
+
+
+                                        <h3 class="news-title mt-2 mb-0">
+
+                                            ‘রাজনীতির সদরে-অন্দরে’
+                                            বইটি কালজয়ী হয়ে হবে:
+                                            নজরুল ইসলাম খান
+
+                                        </h3>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 05 -->
+
+                                <article class="politics-news-item second-news">
+
+                                    <a href="#" class="news-link text-decoration-none">
+
+                                        <div class="overflow-hidden rounded">
+
+                                            <img src="images/politics-5.jpg" class="img-fluid w-100 news-img"
+                                                alt="জনগণের পাশে থাকার কথা">
+
+                                        </div>
+
+
+                                        <h3 class="news-title mt-2 mb-0">
+
+                                            যেখানে থাকি জনগণের
+                                            পাশে থাকব: মির্জা ফখরুল
+
+                                        </h3>
+
+                                    </a>
+
+                                </article>
+
+                            </div>
+
+
+
+                            <!-- =================================================
+                         COLUMN 03
+                    ================================================== -->
+
+                            <div class="col-md-4 politics-news-column px-2 last-column">
+
+
+                                <!-- NEWS 03 -->
+
+                                <article class="politics-news-item">
+
+                                    <a href="#" class="news-link text-decoration-none">
+
+                                        <div class="overflow-hidden rounded">
+
+                                            <img src="images/politics-3.jpg" class="img-fluid w-100 news-img"
+                                                alt="রাজধানীর দুই থানা ছাত্রদলের আহ্বায়ক কমিটি">
+
+                                        </div>
+
+
+                                        <h3 class="news-title mt-2 mb-0">
+
+                                            রাজধানীর দুই থানা ছাত্রদলের
+                                            আহ্বায়ক কমিটি ঘোষণা
+
+                                        </h3>
+
+                                    </a>
+
+                                </article>
+
+
+                                <!-- NEWS 06 -->
+
+                                <article class="politics-news-item second-news">
+
+                                    <a href="#" class="news-link text-decoration-none">
+
+                                        <div class="overflow-hidden rounded">
+
+                                            <img src="images/politics-6.jpg" class="img-fluid w-100 news-img"
+                                                alt="প্রধানমন্ত্রীর সঙ্গে বিএনপির সাক্ষাৎ">
+
+                                        </div>
+
+
+                                        <h3 class="news-title mt-2 mb-0">
+
+                                            প্রধানমন্ত্রীর সঙ্গে বিএনপির
+                                            নবনিযুক্ত স্থায়ী কমিটির
+                                            সদস্যের সাক্ষাৎ
+
+                                        </h3>
+
+                                    </a>
+
+                                </article>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="sports-section">
+
+            <div class="sports-header d-flex align-items-center justify-content-between">
+
+                <!-- Title -->
+
+                <div class="d-flex align-items-center">
+
+                    <!-- Small sports icon -->
+
+                    <span class="sports-icon me-2">
+                        <span></span>
+                        <span></span>
+                    </span>
+
+
+                    <h2 class="sports-title mb-0">
+                        খেলা
+                    </h2>
+
+                </div>
+
+
+                <!-- Arrow -->
+
+                <a href="#" class="sports-arrow text-decoration-none">
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+
+            <!-- =====================================================
+         SPORTS CONTENT
+    ====================================================== -->
+
+            <div class="sports-content border-bottom pb-3">
+
+
+                <div class="row g-0">
+
+
+                    <!-- =================================================
+                 COLUMN 1
+                 TWO SMALL NEWS
+            ================================================== -->
+
+                    <div class="col-lg-2 sports-left-column border-end px-2">
+
+
+                        <!-- NEWS 01 -->
+
+                        <article class="small-sports-news pb-3">
+
+                            <a href="#" class="sports-link text-decoration-none">
+
+                                <div class="overflow-hidden rounded">
+
+                                    <img src="asset/img/image-319639.webp" class="img-fluid w-100 sports-small-img"
+                                        alt="ফিফা বিশ্বকাপ">
+
+                                </div>
+
+
+                                <h3 class="sports-small-title mt-2 mb-0">
+
+                                    জাতীয় কিফনতি বার্তায়
+                                    কার্লোসের ইসলাম গ্রহণের গুঞ্জন
+
+                                </h3>
+
+                            </a>
+
+                        </article>
+
+
+
+                        <!-- NEWS 02 -->
+
+                        <article class="small-sports-news border-top pt-3">
+
+                            <a href="#" class="sports-link text-decoration-none">
+
+                                <div class="overflow-hidden rounded">
+
+                                    <img src="images/sports-2.jpg" class="img-fluid w-100 sports-small-img"
+                                        alt="ক্রিকেট সংবাদ">
+
+                                </div>
+
+
+                                <h3 class="sports-small-title mt-2 mb-0">
+
+                                    বলের আঘাতে আইসিসিতে
+                                    ভারতীয় আম্পায়ার
+
+                                </h3>
+
+                            </a>
+
+                        </article>
+
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                 COLUMN 2
+                 FEATURED NEWS
+            ================================================== -->
+
+                    <div class="col-lg-5 sports-featured-column border-end px-3">
+
+
+                        <article class="featured-sports-news">
+
+
+                            <!-- Featured image -->
+
+                            <a href="#" class="featured-sports-link text-decoration-none">
+
+                                <div class="overflow-hidden rounded">
+
+                                    <img src="asset/img/photo-300.jpg" class="img-fluid w-100 featured-sports-img"
+                                        alt="বার্সেলোনায় রদ্রি">
+
+                                </div>
+
+
+                                <!-- Featured title -->
+
+                                <h2 class="featured-sports-title mt-2 mb-0">
+
+                                    ৮ বছরের চুক্তিতে বার্সেলোনায় রদ্রি
+
+                                </h2>
+
+                            </a>
+
+
+                            <!-- Description -->
+
+                            <p class="featured-sports-description mt-2 mb-0">
+
+                                স্প্যানিশ মিডফিল্ডার রদ্রিকে আনুষ্ঠানিকভাবে
+                                দলে ভেড়ানোর ঘোষণা দিয়েছে বার্সেলোনা।
+                                মঙ্গলবার (১৮ আগস্ট) রদ্রিকে চুক্তিবদ্ধ করার
+                                মাধ্যমে বিশ্বকাপের...
+
+                            </p>
+
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                 COLUMN 3
+                 TWO SMALL NEWS
+            ================================================== -->
+
+                    <div class="col-lg-2 sports-right-news-column border-end px-2">
+
+
+                        <!-- NEWS 03 -->
+
+                        <article class="small-sports-news pb-3">
+
+                            <a href="#" class="sports-link text-decoration-none">
+
+                                <div class="overflow-hidden rounded">
+
+                                    <img src="images/sports-3.jpg" class="img-fluid w-100 sports-small-img"
+                                        alt="বাংলাদেশের ঐতিহাসিক জয়">
+
+                                </div>
+
+
+                                <h3 class="sports-small-title mt-2 mb-0">
+
+                                    বাংলাদেশের ঐতিহাসিক জয়ের
+                                    ধাক্কা, অস্ট্রেলিয়া দলে এলো প্রথম
+                                    পরিবর্তন
+
+                                </h3>
+
+                            </a>
+
+                        </article>
+
+
+
+                        <!-- NEWS 04 -->
+
+                        <article class="small-sports-news border-top pt-3">
+
+                            <a href="#" class="sports-link text-decoration-none">
+
+                                <div class="overflow-hidden rounded">
+
+                                    <img src="images/sports-4.jpg" class="img-fluid w-100 sports-small-img"
+                                        alt="জাতীয় দলের ফুটবলার">
+
+                                </div>
+
+
+                                <h3 class="sports-small-title mt-2 mb-0">
+
+                                    ১৫ ম্যাচ নিষেধ জাতীয় দলের
+                                    ফুটবলার আল-আমিন
+
+                                </h3>
+
+                            </a>
+
+                        </article>
+
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                 COLUMN 4
+                 FOOTBALL LEAGUES
+            ================================================== -->
+
+                    <div class="col-lg-3 sports-league-column ps-3">
+
+
+                        <div class="league-box">
+
+
+                            <!-- League title -->
+
+                            <h3 class="league-heading mb-0">
+                                ইউরোপ
+                            </h3>
+
+
+                            <!-- La Liga -->
+
+                            <a href="#" class="league-item">
+
+                                <img src="/home/prachurjya/Pictures/Screenshots/UEFA.png" alt="La Liga" class="league-logo">
+
+                                <span>
+                                    লা লিগা
+                                </span>
+
+                            </a>
+
+
+                            <!-- Premier League -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/premier-league.png" alt="Premier League" class="league-logo">
+
+                                <span>
+                                    ইংলিশ
+                                </span>
+
+                            </a>
+
+
+                            <!-- Eredivisie -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/eredivisie.png" alt="Eredivisie" class="league-logo">
+
+                                <span>
+                                    এরেডিভিসি
+                                </span>
+
+                            </a>
+
+
+                            <!-- French Ligue 1 -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/ligue-1.png" alt="Ligue 1" class="league-logo">
+
+                                <span>
+                                    ফ্রেঞ্চ ওয়ান
+                                </span>
+
+                            </a>
+
+
+                            <!-- Scottish Premiership -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/scottish-premiership.png" alt="Scottish Premiership"
+                                    class="league-logo">
+
+                                <span>
+                                    ইউরোপিয়ান
+                                </span>
+
+                            </a>
+
+
+                            <!-- UEFA Champions League -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/champions-league.png" alt="Champions League" class="league-logo">
+
+                                <span>
+                                    উয়েফা চ্যাম্পিয়নস লিগ
+                                </span>
+
+                            </a>
+
+
+                            <!-- Caribbean Premier League -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/cpl.png" alt="Caribbean Premier League" class="league-logo">
+
+                                <span>
+                                    ক্যারিবিয়ান প্রিমিয়ার লিগ
+                                </span>
+
+                            </a>
+
+
+                            <!-- Bundesliga -->
+
+                            <a href="#" class="league-item">
+
+                                <img src="images/bundesliga.png" alt="Bundesliga" class="league-logo">
+
+                                <span>
+                                    বুন্দেসলিগা
+                                </span>
+
+                            </a>
+
+                            <a href="#" class="league-item">
+
+                                <img src="images/laliga.png" alt="La Liga" class="league-logo">
+
+                                <span>
+                                    লা লিগা
+                                </span>
+
+                            </a>
+
+
+                            <!-- Premier League -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/premier-league.png" alt="Premier League" class="league-logo">
+
+                                <span>
+                                    ইংলিশ
+                                </span>
+
+                            </a>
+
+
+                            <!-- Eredivisie -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/eredivisie.png" alt="Eredivisie" class="league-logo">
+
+                                <span>
+                                    এরেডিভিসি
+                                </span>
+
+                            </a>
+
+
+                            <!-- French Ligue 1 -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/ligue-1.png" alt="Ligue 1" class="league-logo">
+
+                                <span>
+                                    ফ্রেঞ্চ ওয়ান
+                                </span>
+
+                            </a>
+
+
+                            <!-- Scottish Premiership -->
+
+                            <a href="#" class="league-item d-flex align-items-center text-decoration-none">
+
+                                <img src="images/scottish-premiership.png" alt="Scottish Premiership"
+                                    class="league-logo">
+
+                                <span>
+                                    ইউরোপিয়ান
+                                </span>
+
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+    <!-- ======================== -->
+    <!-- FOOTER START             -->
+    <!-- ======================== -->
+    <footer class="bg-white py-3" id="footer-navigation">
+
+        <div class="border-bottom border-top ">
+            <div class="container-fluid">
+                <div class="row align-items-center g-3">
+                    <!-- Left: Slogan / Logo Text -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-logo-text py-2 mt-2">
+                            <h1 class="fs-5">
+                                বাংলাদেশ ও বিদেশের সকল খবর, মোবাইল নিউজ, লাইভ নিউজ, রাজনীতি, বাণিজ্য, দেশা, বাংলাদেশ সহ
+                                সকল সংগঠিত সেবার
+                                আপত্তি পত্রিক করণ কালবেলা ডট কম।
+                            </h1>
+                        </div>
+                    </div>
+
+                    <!-- Right: Navigation Links -->
+                    <div class="col-lg-8 col-md-6">
+                        <div class="d-flex flex-wrap justify-content-md-end align-items-center">
+                            <div class="bottom-navigation text-md-end">
+                                <a href="/about">কালবেলা</a>
+                                <a href="/privacy-policy">গোপনীয়তার নীতি</a>
+                                <a href="/terms">শর্তাবলি</a>
+                                <a href="/comment-policy">মন্তব্য প্রকাশের নীতিমালা</a>
+                                <a href="/converter" target="_blank">বাংলা কনভার্টার</a>
+                                <a href="/advertisement">বিজ্ঞাপন</a>
+                                <a href="/contact-us">যোগাযোগ</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-md-end align-items-center mt-1">
+                            <div class="bottom-navigation text-md-end">
+                                <a href="/sorkari-chutir-talika-2025">ছুটির তালিকা</a>
+                                <a href="/dibosh">দিবস</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== ADDRESS & CONTACT ===== -->
+        <div class="container-fluid py-3 mt-2 site-address">
+            <div class="row g-4 fs-5">
+                <div class="col-md-6">
+                    <p class="site-add-p fs-5">
+                        <span class="sompadok fw-bold">সম্পাদক: সন্তোষ শর্মা । প্রকাশক: মিয়া নুরুদ্দিন আহাম্মেদ
+                            অপু</span>
+                    </p>
+                    <address>
+                        কালবেলা মিডিয়া লিমিটেডের পক্ষে প্রকাশক কর্তৃক নিউমার্কেট সিটি কমপ্লেক্স, ৪৪/১, রহিম স্কয়ার,
+                        নিউমার্কেট,
+                        ঢাকা থেকে প্রকাশিত এবং ২৮/বি, টয়েনবি সার্কুলার রোড, মতিঝিল ঢাকা, শরীয়তপুর প্রিন্টিং প্রেস থেকে
+                        মুদ্রিত।
+                    </address>
+                </div>
+                <div class="col-md-6">
+                    <p class="">
+                        ফোন : +৮৮ ০২ ৪৪৬১৭০০৩, +৮৮ ০২ ৪৪৬১৭০০৪ ।<br>
+                        ফ্যাক্স : +৮৮ ০২ ৪৪৬১৭০০২ । ই-মেইল: <a href="#"
+                            class="text-decoration-none">news@kalbela.com</a><br>
+                        বিজ্ঞাপন বিভাগ: ফোন: +৮৮ ০২ ৪৪৬১৭০০৫, ০১৭৩০ ০৯৩৩২৮ । ই-মেইল: <a href="#"
+                            class="text-decoration-none">ads@kalbela.com</a><br>
+                        সার্কুলেশন : ফোন: ০১৭৩০ ০৯৩৩৪৭ । কালবেলা মিডিয়া লিমিটেডের একটি প্রকাশনা।
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== SOCIAL, NEWSLETTER, MOBILE APPS ===== -->
+        <div class="py-3 border-top" id="footer-social">
+            <div class="container-fluid">
+                <div class="row align-items-center g-4">
+                    <!-- Social Media -->
+                    <div class="col-7">
+                        <!-- Changed container to flex-column and align-items-start to create 2 lines -->
+                        <div class="d-flex flex-column justify-content-start align-items-start gap-2">
+
+                            <!-- Line 1: Icon and Text Heading -->
+                            <div class="title d-inline-flex align-items-center">
+                                <i class="fa-solid fa-circle-nodes" style="font-size: 30px; margin-right: 8px;"></i>
+
+
+
+                                <span style="font-weight: bold; font-size: 17px;">
+                                    সোশ্যাল মিডিয়া
+                                </span>
+                            </div>
+
+                            <!-- Line 2: Social Icons directly below -->
+                            <div class="soacial-icon">
+                                <!-- Added a gap class to automatically space out your FontAwesome icons cleanly -->
+                                <div class="d-flex flex-row gap-1 fs-3">
+                                    <a aria-label="facebook" href="https://www.facebook.com/kalbeladigital/"
+                                        class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                                    <a aria-label="youtube" href="https://www.youtube.com/@kalbelanews24"
+                                        class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                                    <a aria-label="twitter" href="https://twitter.com/kalbeladigital" class="twitter"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a aria-label="linkedin" href="https://www.linkedin.com/company/kalbeladigital/"
+                                        class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a aria-label="instagram" href="https://www.instagram.com/kalbela_digital/"
+                                        class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Newsletter -->
+                    <div class="col-md-3">
+                        <div class="newsletter">
+                            <h5 class="title d-flex align-items-center">
+                                <i class="fa-regular fa-envelope-open" style="font-size: 30px;"></i>
+                                <span style=" display: inline-block;">নিউজলেটার</span>
+                            </h5>
+                            <div class="d-block" style="font-size: 19px;">
+                                কালবেলা থেকে প্রতিদিন মেইলে আপডেট পেতে সাবস্ক্রাইব করুন।
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Apps -->
+                    <div class="col-md-2">
+                        <div class="mobile_app">
+                            <h5 class="title d-flex align-items-center">
+                                <i class="fa-solid fa-mobile-screen-button" style="font-size: 30px;"></i>
+                                <span class="d-flex align-items-center">মোবাইল অ্যাপস</span>
+                            </h5>
+                            <div>
+                                <!-- Added text-decoration-none to remove the underline and text-dark to make it look clean -->
+                                <a href="https://play.google.com/store/apps/details?id=apps.newspaper.kalbela"
+                                    target="_blank" class="d-block text-decoration-none text-dark mb-2">
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>অ্যান্ড্রয়েড
+                                </a>
+                                <a href="https://apps.apple.com/us/app/kalbela-bangla-newspaper/id6476605509?platform=iphone"
+                                    target="_blank" class="d-block text-decoration-none text-dark">
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>আইফোন
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== COPYRIGHT ===== -->
+        <div class="bg-light py-2 fs-5">
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <div>স্বত্ব © কালবেলা মিডিয়া লিমিটেড ২০২৬</div>
+                    <div>ওয়েবসাইটের কোনো লেখা, ছবি, ভিডিও অনুমতি ছাড়া ব্যবহার বেআইনি।</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ===== FOOTER END ===== -->
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('storySliderTrack');
+            const prevBtn = document.getElementById('prevStoryBtn');
+            const nextBtn = document.getElementById('nextStoryBtn');
+
+            let currentIndex = 0;
+            const totalCards = track.children.length;
+
+            function updateSlider() {
+                // Shift track based on card width percentage + gap
+                const shiftPercentage = currentIndex * 85;
+                track.style.transform = `translateX(-${shiftPercentage}%)`;
+
+                // Toggle button visibility
+                if (currentIndex === 0) {
+                    prevBtn.classList.add('d-none');
+                } else {
+                    prevBtn.classList.remove('d-none');
+                }
+
+                if (currentIndex >= totalCards - 1) {
+                    nextBtn.classList.add('d-none');
+                } else {
+                    nextBtn.classList.remove('d-none');
+                }
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentIndex < totalCards - 1) {
+                    currentIndex++;
+                    updateSlider();
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSlider();
+                }
+            });
+        });
+    </script>
+    <!-- ==========================================================
+     JAVASCRIPT
+========================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const track = document.getElementById("videoTrack");
+            const prevButton = document.getElementById("videoPrev");
+            const nextButton = document.getElementById("videoNext");
+
+            let currentIndex = 0;
+
+
+            /* ======================================================
+               HOW MANY CARDS ARE VISIBLE?
+            ====================================================== */
+
+            function getVisibleCards() {
+
+                if (window.innerWidth <= 575) {
+                    return 1;
+                }
+
+                if (window.innerWidth <= 991) {
+                    return 2;
+                }
+
+                return 4;
+            }
+
+
+            /* ======================================================
+               GET CARD WIDTH + GAP
+            ====================================================== */
+
+            function getMoveDistance() {
+
+                const card = track.querySelector(".video-card");
+
+                if (!card) {
+                    return 0;
+                }
+
+                const cardWidth =
+                    card.getBoundingClientRect().width;
+
+                const trackStyle =
+                    window.getComputedStyle(track);
+
+                const gap =
+                    parseFloat(trackStyle.gap) || 0;
+
+                return cardWidth + gap;
+            }
+
+
+            /* ======================================================
+               UPDATE SLIDER
+            ====================================================== */
+
+            function updateSlider() {
+
+                const cards =
+                    track.querySelectorAll(".video-card");
+
+                const totalCards =
+                    cards.length;
+
+                const visibleCards =
+                    getVisibleCards();
+
+                /*
+                   Example:
+        
+                   8 cards
+                   4 visible
+        
+                   Maximum index = 8 - 4 = 4
+                */
+
+                const maxIndex =
+                    Math.max(
+                        0,
+                        totalCards - visibleCards
+                    );
+
+
+                /* Keep index within valid range */
+
+                currentIndex =
+                    Math.max(
+                        0,
+                        Math.min(
+                            currentIndex,
+                            maxIndex
+                        )
+                    );
+
+
+                /* Move ONE card */
+
+                const moveDistance =
+                    getMoveDistance();
+
+                const translate =
+                    currentIndex * moveDistance;
+
+                track.style.transform =
+                    `translateX(-${translate}px)`;
+
+
+                /* ==================================================
+                   BUTTON VISIBILITY
+                ================================================== */
+
+                /*
+                   Beginning:
+                   Hide Previous
+                */
+
+                prevButton.classList.toggle(
+                    "d-none",
+                    currentIndex === 0
+                );
+
+
+                /*
+                   End:
+                   Hide Next
+                */
+
+                nextButton.classList.toggle(
+                    "d-none",
+                    currentIndex >= maxIndex
+                );
+
+            } // <-- THIS WAS MISSING
+
+
+            /* ======================================================
+               NEXT BUTTON
+            ====================================================== */
+
+            nextButton.addEventListener(
+                "click",
+                function () {
+
+                    const totalCards =
+                        track.querySelectorAll(
+                            ".video-card"
+                        ).length;
+
+                    const maxIndex =
+                        Math.max(
+                            0,
+                            totalCards - getVisibleCards()
+                        );
+
+
+                    /*
+                       Move only ONE card
+                    */
+
+                    if (currentIndex < maxIndex) {
+
+                        currentIndex++;
+
+                        updateSlider();
+
+                    }
+
+                }
+            );
+
+
+            /* ======================================================
+               PREVIOUS BUTTON
+            ====================================================== */
+
+            prevButton.addEventListener(
+                "click",
+                function () {
+
+                    /*
+                       Move only ONE card backwards
+                    */
+
+                    if (currentIndex > 0) {
+
+                        currentIndex--;
+
+                        updateSlider();
+
+                    }
+
+                }
+            );
+
+
+            /* ======================================================
+               RESPONSIVE RESIZE
+            ====================================================== */
+
+            window.addEventListener(
+                "resize",
+                function () {
+
+                    updateSlider();
+
+                }
+            );
+
+
+            /* ======================================================
+               INITIALIZE
+            ====================================================== */
+
+            updateSlider();
+
+        });
+
+    </script>
+
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
