@@ -1,0 +1,516 @@
+/* =========================================================
+   FOOTER( with logo) 
+   Bootstrap 5 handles the main layout.
+   Custom CSS is only used where Bootstrap cannot give
+   the exact visual behavior.
+   ========================================================= */
+
+body {
+    font-family: "Noto Serif Bengali", "SolaimanLipi", Arial, sans-serif;
+    color: #222;
+}
+
+#footer-navigation {
+    line-height: 22px;
+}
+
+
+/* =========================================================
+   TOP NAVIGATION
+   ========================================================= */
+
+#footer-navigation .bottom-navigation a {
+    color: #222;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+#footer-navigation .bottom-navigation a:hover {
+    color: #028bf7 !important;
+}
+
+
+/* =========================================================
+   ADDRESS / CONTACT
+   ========================================================= */
+
+#footer-navigation .site-address {
+    font-size: 17px;
+}
+
+#footer-navigation .site-add-p {
+    margin-bottom: 4px !important;
+    font-size: 18px;
+}
+
+#footer-navigation .footer-address {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+#footer-navigation .contact-info {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+#footer-navigation .contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+#footer-navigation .contact-info a:hover {
+    color: #007bff;
+}
+
+
+/* =========================================================
+   MOBILE-ONLY DESCRIPTION
+   ========================================================= */
+
+#footer-navigation .mobile-description {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   TITLE ICONS
+   ========================================================= */
+
+#footer-navigation .footer-title-icon {
+    border-right: 2px solid #ccc;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+#footer-navigation .social-title .footer-title-icon,
+#footer-navigation .newsletter-title .footer-title-icon,
+#footer-navigation .mobile-app-title .footer-title-icon {
+    font-size: 34px;
+}
+
+
+/* =========================================================
+   SOCIAL TITLE
+   Label only — no click handler, so no cursor/hover affordance
+   ========================================================= */
+
+/* #footer-navigation .social-title-text {
+    
+} */
+
+
+/* =========================================================
+   SOCIAL ICONS
+   ========================================================= */
+
+#footer-navigation .social-links a {
+    color: inherit;
+    text-decoration: none;
+    line-height: 1;
+}
+
+#footer-navigation .facebook-icon {
+    color: #1877f2;
+    font-size: 35px;
+}
+
+#footer-navigation .youtube-icon {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fe0000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#footer-navigation .twitter-icon {
+    color: #03a9f5;
+    font-size: 30px;
+}
+
+#footer-navigation .linkedin-icon {
+    color: #0077b5;
+    font-size: 32px;
+}
+
+#footer-navigation .instagram-icon {
+    font-size: 35px;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   NEWSLETTER / MOBILE APP
+   ========================================================= */
+
+#footer-navigation .newsletter-title,
+#footer-navigation .mobile-app-title {
+    cursor: pointer;
+}
+
+#footer-navigation .newsletter-title:hover,
+#footer-navigation .newsletter-title:hover i,
+#footer-navigation .newsletter-title:hover span,
+#footer-navigation .mobile-app-title:hover,
+#footer-navigation .mobile-app-title:hover i,
+#footer-navigation .mobile-app-title:hover span {
+    color: #007bff !important;
+}
+
+#footer-navigation .newsletter-description {
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+#footer-navigation .app-link {
+    color: #222;
+    text-decoration: none;
+}
+
+#footer-navigation .app-link:hover,
+#footer-navigation .app-link:hover i {
+    color: #007bff !important;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+   Hidden until the user scrolls past SHOW_AFTER_PX (see JS).
+   ========================================================= */
+
+#footer-navigation .back-to-top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 48px;
+    height: 48px;
+    z-index: 9999;
+
+    border: 2px solid #222;
+    border-radius: 50%;
+
+    background: #fff;
+    color: #222;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+#footer-navigation .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#footer-navigation .back-to-top:hover {
+    background: #222;
+    color: #fff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+
+    #footer-navigation .bottom-navigation a {
+        font-size: 18px;
+    }
+
+    #footer-navigation .site-add-p {
+        font-size: 17px;
+    }
+
+    #footer-navigation .footer-address,
+    #footer-navigation .contact-info {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+
+    /* -----------------------------------------------------
+       TOP NAVIGATION
+       Mobile:
+       - hide logo
+       - keep navigation on one horizontal line
+       - allow horizontal scrolling
+       ----------------------------------------------------- */
+
+    #footer-navigation .footer-top-logo {
+        display: none !important;
+    }
+
+    #footer-navigation .footer-top-navigation {
+        width: 100%;
+    }
+
+    #footer-navigation .bottom-navigation {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 0 !important;
+
+        /* smooth touch scrolling */
+        -webkit-overflow-scrolling: touch;
+
+        /* hide scrollbar */
+        scrollbar-width: none;
+
+        /* prevent accidental wrapping */
+        white-space: nowrap;
+
+        box-shadow:
+            0 -3px 6px rgba(0, 0, 0, 0.12),
+            0 3px 6px rgba(0, 0, 0, 0.18);
+    }
+
+    #footer-navigation .bottom-navigation::-webkit-scrollbar {
+        display: none;
+    }
+
+    #footer-navigation .bottom-navigation a {
+        position: relative;
+        flex: 0 0 auto;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 8px 14px !important;
+        white-space: nowrap;
+    }
+
+    /* Short, centered divider — not a full-height border.
+       Sits vertically centered between items, like a
+       typographic "|" rather than a cell wall. */
+    #footer-navigation .bottom-navigation a:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 16px;
+        background-color: #d3d3d3;
+    }
+
+    #footer-navigation .bottom-navigation a:first-child {
+        padding-left: 24px !important;
+    }
+
+
+    #footer-navigation .site-add-p,
+    #footer-navigation .site-add-p .fw-bold {
+        font-weight: 400 !important;
+    }
+
+    /* -----------------------------------------------------
+       EDITOR / PUBLISHER
+       ----------------------------------------------------- */
+
+    #footer-navigation .site-address {
+        padding-top: 24px !important;
+        padding-bottom: 18px !important;
+        font-size: 17px;
+    }
+
+    #footer-navigation .site-address .row {
+        display: block;
+    }
+
+    #footer-navigation .site-address .col-md-6 {
+        width: 100%;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #footer-navigation .editor-publisher {
+        text-align: center;
+        margin-bottom: 20px !important;
+    }
+
+    #footer-navigation .site-add-p {
+        margin-bottom: 0 !important;
+        font-size: 24px;
+        line-height: 1.45;
+    }
+
+    #footer-navigation .footer-address {
+        display: none;
+    }
+
+    #footer-navigation .contact-info {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE DESCRIPTION
+       ----------------------------------------------------- */
+
+    #footer-navigation .mobile-description-wrapper {
+        display: block !important;
+        border-top: 1px solid #dee2e6;
+        padding: 20px 15px 18px;
+    }
+
+    #footer-navigation .mobile-description {
+        margin: 0;
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+
+    /* -----------------------------------------------------
+       SOCIAL / NEWSLETTER / APPS
+       ----------------------------------------------------- */
+
+    #footer-navigation #footer-social {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    #footer-navigation .social-column {
+        width: 100%;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-bottom: 16px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    #footer-navigation .newsletter-column,
+    #footer-navigation .mobile-app-column {
+        width: 50%;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #footer-navigation .social-title .footer-title-icon,
+    #footer-navigation .newsletter-title .footer-title-icon,
+    #footer-navigation .mobile-app-title .footer-title-icon {
+        font-size: 40px;
+    }
+
+    #footer-navigation .social-title-text,
+    #footer-navigation .newsletter-title,
+    #footer-navigation .mobile-app-title {
+        font-size: 22px !important;
+    }
+
+    #footer-navigation .social-links {
+        margin-top: 12px !important;
+        gap: 18px !important;
+    }
+
+    #footer-navigation .facebook-icon {
+        font-size: 48px;
+    }
+
+    #footer-navigation .youtube-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 27px;
+    }
+
+    #footer-navigation .twitter-icon {
+        font-size: 42px;
+    }
+
+    #footer-navigation .linkedin-icon {
+        font-size: 44px;
+    }
+
+    #footer-navigation .instagram-icon {
+        font-size: 48px;
+    }
+
+    #footer-navigation .newsletter-title,
+    #footer-navigation .mobile-app-title {
+        margin-bottom: 8px !important;
+    }
+
+    #footer-navigation .newsletter-description {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    #footer-navigation .app-link {
+        font-size: 19px;
+        line-height: 1.6 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       COPYRIGHT / DISCLAIMER
+       Mobile order:
+       disclaimer first
+       copyright second
+       ----------------------------------------------------- */
+
+    #footer-navigation .copyright-wrapper {
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+    #footer-navigation .copyright-content {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+    }
+
+    #footer-navigation .copyright-disclaimer {
+        order: 1;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    #footer-navigation .copyright-text {
+        order: 2;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+
+    /* -----------------------------------------------------
+       BACK TO TOP
+       ----------------------------------------------------- */
+
+    #footer-navigation .back-to-top {
+        right: 12px;
+        bottom: 12px;
+        width: 52px;
+        height: 52px;
+    }
+}

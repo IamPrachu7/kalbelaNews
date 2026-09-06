@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="bn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>জাতীয় | কালবেলা | বিডি নিউজ | বাংলা নিউজ</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://cdn.jsdelivr.net" rel="dns-prefetch" />
+  <link href="https://cdnjs.cloudflare.com" rel="dns-prefetch" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://www.kalbela.com/favicon.ico?v=10" rel="icon" type="image/x-icon" />
+  <!-- <link href="national-shared.css" rel="stylesheet" />
+  <link href="national-main.css" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" href="style/national.css">
+</head>
+
+<body>
+  <!-- =========================================================
+       STICKY TOP AD
+  ========================================================= -->
+  <div class="showTopAd container-fluid sticky-top-ad border-bottom">
+    <div class="mb-2 py-2 text-center top-add">
+      <div style="width:100%; height:80px; display:flex; justify-content:center; align-items:center; overflow:hidden;">
+        <img src="asset/img/topAd.jpg" alt="Advertisement" style="max-width:100%; max-height:100%; object-fit:contain;">
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MAIN HEADER
+  ========================================================= -->
+  <header class="bg-white border" id="minherder">
+    <div class="container-fluid d-flex align-items-center pt-3 py-2 px-3">
+
+      <div class="pageLogo ms-1 me-5">
+        <a href="index.html" class="d-block">
+          <img src="asset/logos/logo.png" alt="pagelogo">
+        </a>
+      </div>
+
+      <!-- ===== MOBILE ONLY: quick links (stacked) + hamburger toggle ===== -->
+      <div class="d-flex d-lg-none align-items-center ms-auto gap-3">
+        <div class="mobileQuickStack d-flex flex-column">
+          <a href="#" class="mobileQuickLink d-flex align-items-center text-dark text-decoration-none">
+            <i class="fa-regular fa-newspaper me-1"></i>
+            <span>ই-পেপার</span>
+          </a>
+          <a href="#" class="mobileQuickLink d-flex align-items-center text-dark text-decoration-none">
+            <i class="fa-solid fa-tv me-1"></i>
+            <span>প্রোগ্রাম</span>
+          </a>
+        </div>
+        <button id="mobileMenuToggle" class="mobileMenuBtn border-0 bg-transparent p-0" aria-label="Menu"
+          aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <!-- ===== END MOBILE ONLY ===== -->
+
+      <div class="navItem flex-grow-1 d-none d-lg-block">
+        <ul class="d-flex flex-wrap justify-content-evenly align-items-center gap-4 list-unstyled mb-0 ms-4 me-4">
+          <li>
+            <a aria-label="আজকের পত্রিকা" href="#"
+              class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+              <i class="fa-sharp fa-solid fa-table-list me-2"></i> আজকের পত্রিকা
+            </a>
+          </li>
+          <li>
+            <a aria-label="ই-পেপার" href="#" target="_blank"
+              class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+              <i class="fa-regular fa-newspaper me-2"></i>ই-পেপার
+            </a>
+          </li>
+          <li class="dropdown">
+            <button
+              class="btn btn-link dropdown-toggle d-inline-flex align-items-center fw-semibold text-dark text-decoration-none p-0 topLink"
+              type="button" id="megazinDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-book me-2"></i>ম্যাগাজিন
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="megazinDropdown">
+              <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৬</a></li>
+              <li><a class="dropdown-item" href="#">ঈদ আনন্দ ২০২৬</a></li>
+              <li><a class="dropdown-item" href="#">ঈদ আনন্দ ২০২৫</a></li>
+              <li><a class="dropdown-item" href="#">স্বাস্থ্য সংখ্যা ২০২৫</a></li>
+              <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৫</a></li>
+              <li><a class="dropdown-item" href="#">ঈদ আনন্দ ২০২৪</a></li>
+              <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৪</a></li>
+              <li><a class="dropdown-item" href="#">ঈদ সংখ্যা ২০২৩</a></li>
+              <li><a class="dropdown-item" href="#">সারাবেলা ম্যাগাজিন</a></li>
+              <li><a class="dropdown-item" href="#">টি ২০ ম্যাগাজিন</a></li>
+              <li><a class="dropdown-item" href="#">ফ্রি হিট</a></li>
+              <li><a class="dropdown-item" href="#">ফ্রি কিক</a></li>
+            </ul>
+          </li>
+          <li>
+            <a aria-label="আর্কাইভ" href="#"
+              class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+              <img width="16" src="asset/icons/archive.webp" class="me-2" alt="archive" />আর্কাইভ
+            </a>
+          </li>
+
+          <li class="hoverDropdown">
+            <a href="#" aria-label="সোশ্যাল মিডিয়া"
+              class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+              <i class="fa-solid fa-thumbs-up me-2"></i>সোশ্যাল মিডিয়া
+            </a>
+
+            <div class="social-mega-menu">
+              <div class="mega-arrow"></div>
+
+              <div class="mega-row cols-4">
+                <div class="mega-section">
+                  <h6 class="mega-title">ফেসবুক পেজ</h6>
+                  <a href="#"><i class="fa-brands fa-facebook social-icon fb"></i>Kalbela</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title invisible">.</h6>
+                  <a href="#"><i class="fa-brands fa-facebook social-icon fb"></i>Kalbela Online</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title invisible">.</h6>
+                  <a href="#"><i class="fa-brands fa-facebook social-icon fb"></i>kalbela.com</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title invisible">.</h6>
+                  <a href="#"><i class="fa-brands fa-facebook social-icon fb"></i>Kalbela World</a>
+                </div>
+                <div class="mega-section">
+                  <a href="#"><i class="fa-brands fa-facebook social-icon fb"></i>Kalbela Sports</a>
+                </div>
+                <div class="mega-section">
+                  <a href="#"><i class="fa-brands fa-facebook social-icon fb"></i>Kalbela Entertainment</a>
+                </div>
+                <div class="mega-section">
+                  <a href="#"><i class="fa-brands fa-facebook social-icon fb"></i>Kalbela Drama</a>
+                </div>
+              </div>
+
+              <hr class="mega-divider" />
+
+              <div class="mega-row cols-4">
+                <div class="mega-section">
+                  <h6 class="mega-title">ইউটিউব চ্যানেল</h6>
+                  <a href="#"><i class="fa-brands fa-youtube social-icon yt"></i>Kalbela News <i
+                      class="fa-solid fa-circle-check verified"></i></a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title invisible">.</h6>
+                  <a href="#"><i class="fa-brands fa-youtube social-icon yt"></i>Kalbela World <i
+                      class="fa-solid fa-circle-check verified"></i></a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title invisible">.</h6>
+                  <a href="#"><i class="fa-brands fa-youtube social-icon yt"></i>Kalbela Entertainment <i
+                      class="fa-solid fa-circle-check verified"></i></a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title invisible">.</h6>
+                  <a href="#"><i class="fa-brands fa-youtube social-icon yt"></i>Kalbela Sports <i
+                      class="fa-solid fa-circle-check verified"></i></a>
+                </div>
+                <div class="mega-section">
+                  <a href="#"><i class="fa-brands fa-youtube social-icon yt"></i>Kalbela <i
+                      class="fa-solid fa-circle-check verified"></i></a>
+                </div>
+                <div class="mega-section">
+                  <a href="#"><i class="fa-brands fa-youtube social-icon yt"></i>Kalbela Drama <i
+                      class="fa-solid fa-circle-check verified"></i></a>
+                </div>
+              </div>
+
+              <hr class="mega-divider" />
+
+              <div class="mega-row cols-4">
+                <div class="mega-section">
+                  <h6 class="mega-title">টিকটক</h6>
+                  <a href="#"><i class="fa-brands fa-tiktok social-icon tt"></i>Kalbela News</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">টিকটক</h6>
+                  <a href="#"><i class="fa-brands fa-tiktok social-icon tt"></i>Kalbela Entertainment <i
+                      class="fa-solid fa-circle-check verified"></i></a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">টুইটার</h6>
+                  <a href="#"><i class="fa-brands fa-twitter social-icon tw"></i>Kalbela</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">ইনস্টাগ্রাম</h6>
+                  <a href="#"><i class="fa-brands fa-instagram social-icon ig"></i>Kalbela</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">লিংকডইন</h6>
+                  <a href="#"><i class="fa-brands fa-linkedin social-icon li"></i>Kalbela</a>
+                </div>
+              </div>
+
+              <hr class="mega-divider" />
+
+              <div class="mega-row cols-4">
+                <div class="mega-section">
+                  <h6 class="mega-title">টেলিগ্রাম</h6>
+                  <a href="#"><i class="fa-brands fa-telegram social-icon tg"></i>Kalbela</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">লাইকি</h6>
+                  <a href="#"><i class="fa-solid fa-star social-icon lk"></i>Kalbela News</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">সাউন্ডক্লাউড পডকাস্ট</h6>
+                  <a href="#"><i class="fa-brands fa-soundcloud social-icon sc"></i>Kalbela News</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">গুগল নিউজ</h6>
+                  <a href="#"><i class="fa-brands fa-google social-icon gn"></i>Kalbela</a>
+                </div>
+              </div>
+
+              <hr class="mega-divider" />
+
+              <div class="mega-row cols-4">
+                <div class="mega-section">
+                  <h6 class="mega-title">ইমু</h6>
+                  <a href="#"><i class="fa-solid fa-comment-dots social-icon imo"></i>Kalbela</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">হোয়াটসঅ্যাপ</h6>
+                  <a href="#"><i class="fa-brands fa-whatsapp social-icon wa"></i>Kalbela</a>
+                </div>
+                <div class="mega-section">
+                  <h6 class="mega-title">থ্রেডস</h6>
+                  <a href="#"><i class="fa-brands fa-threads social-icon th"></i>Kalbela News</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="d-inline-flex align-items-center fw-semibold text-dark text-decoration-none topLink">
+              <i class="fa-solid fa-arrow-down-up-across-line me-2"></i>বাংলা কনভার্টার
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="icons align-items-center gap-2 ms-auto d-none d-lg-flex">
+        <span class="iconBtn d-flex align-items-center justify-content-center rounded-circle bg-light"
+          style="width:38px;height:38px;cursor:pointer;">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+
+        <div class="notifyWrap position-relative">
+          <samp id="notificationBell"
+            class="iconBtn position-relative d-flex align-items-center justify-content-center rounded-circle bg-light"
+            style="width:38px;height:38px;cursor:pointer;">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notifyDot"></span>
+          </samp>
+
+          <div class="notifyPanel">
+            <div class="notifyInner">
+              <ul class="list-unstyled mb-0">
+                <li class="notifyItem">
+                  <a href="#" class="text-dark text-decoration-none">
+                    <p class="fw-bold mb-1">রোববার চট্টগ্রাম বিশ্ববিদ্যালয়ের সব পরীক্ষা স্থগিত, ক্লাস চলবে</p>
+                    <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>১১ জুলাই, ২০২৬</span>
+                  </a>
+                </li>
+                <li class="notifyItem">
+                  <a href="#" class="text-dark text-decoration-none">
+                    <p class="fw-bold mb-1">টানা বৃষ্টিতে চট্টগ্রামে পাহাড়ধসের শঙ্কা, প্রশাসনের মাইকিং</p>
+                    <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>০৬ জুলাই, ২০২৬</span>
+                  </a>
+                </li>
+                <li class="notifyItem">
+                  <a href="#" class="text-dark text-decoration-none">
+                    <p class="fw-bold mb-1">কক্সবাজারে পৌঁছেছেন প্রধানমন্ত্রী তারেক রহমান</p>
+                    <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>১৩ জুন, ২০২৬</span>
+                  </a>
+                </li>
+                <li class="notifyItem">
+                  <a href="#" class="text-dark text-decoration-none">
+                    <p class="fw-bold mb-1">ঈদের ছুটি শেষে ঢাকায় ফিরছেন নগরবাসী</p>
+                    <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>৩১ মে, ২০২৬</span>
+                  </a>
+                </li>
+                <li class="notifyItem">
+                  <a href="#" class="text-dark text-decoration-none">
+                    <p class="fw-bold mb-1">জিয়াউর রহমানের সমাধিতে শ্রদ্ধা জানালেন প্রধানমন্ত্রী</p>
+                    <span class="notifyMeta"><i class="fa-regular fa-clock me-1"></i>৩০ মে, ২০২৬</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- =========================================================
+     MOBILE STICKY CATEGORY NAV ONLY
+     Desktop: hidden
+     Mobile: horizontally scrollable + sticky
+========================================================= -->
+  <nav class="mobile-sticky-category" aria-label="Mobile category navigation">
+    <div class="mobile-sticky-category-scroll">
+
+      <!-- Home -->
+      <a href="index.html" class="mobile-sticky-category-item mobile-sticky-home" aria-label="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+
+      <!-- Main categories -->
+      <a href="#" class="mobile-sticky-category-item">সর্বশেষ</a>
+      <a href="#" class="mobile-sticky-category-item active">জাতীয়</a>
+      <a href="#" class="mobile-sticky-category-item ">রাজনীতি</a>
+      <a href="#" class="mobile-sticky-category-item">সারাদেশ</a>
+      <a href="#" class="mobile-sticky-category-item">বিশ্ব</a>
+      <a href="#" class="mobile-sticky-category-item">খেলা</a>
+      <a href="#" class="mobile-sticky-category-item">শিক্ষা</a>
+      <a href="#" class="mobile-sticky-category-item">বাণিজ্য</a>
+      <a href="#" class="mobile-sticky-category-item">বিনোদন</a>
+      <a href="#" class="mobile-sticky-category-item">মতামত</a>
+      <a href="#" class="mobile-sticky-category-item">আইন-আদালত</a>
+      <a href="#" class="mobile-sticky-category-item">অপরাধ</a>
+      <a href="#" class="mobile-sticky-category-item">স্বাস্থ্য</a>
+      <a href="#" class="mobile-sticky-category-item">ধর্ম</a>
+      <a href="#" class="mobile-sticky-category-item">রাজধানী</a>
+      <a href="#" class="mobile-sticky-category-item">প্রযুক্তি</a>
+      <a href="#" class="mobile-sticky-category-item">প্রবাস</a>
+      <a href="#" class="mobile-sticky-category-item">চাকরি</a>
+      <a href="#" class="mobile-sticky-category-item">কর্পোরেট</a>
+      <a href="#" class="mobile-sticky-category-item">জীবনযাপন</a>
+      <a href="#" class="mobile-sticky-category-item">লাইফস্টাইল</a>
+      <a href="#" class="mobile-sticky-category-item">ভিডিও</a>
+      <a href="#" class="mobile-sticky-category-item">অডিও</a>
+      <a href="#" class="mobile-sticky-category-item">সোশ্যাল মিডিয়া</a>
+      <a href="#" class="mobile-sticky-category-item">বিচিত্র</a>
+      <a href="#" class="mobile-sticky-category-item">ই-পেপার</a>
+
+    </div>
+  </nav>
+
+  <!-- =========================================================
+       CATEGORY NAV
+  ========================================================= -->
+  <div class="categoryNav bg-white">
+    <div class="container-fluid mb-4 shadow-sm">
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="collapse navbar-collapse show justify-content-center">
+          <ul class="navbar-nav align-items-center flex-row py-1 gap-4">
+            <li class="nav-item"><a class="catLink nav-link px-2" href="index.html"><i
+                  class="fa-solid fa-house"></i></a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">সর্বশেষ</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2 active" href="#">জাতীয়</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">রাজনীতি</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">সারাদেশ</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">বিশ্ব</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">খেলা</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">শিক্ষা</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">বাণিজ্য</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">বিনোদন</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">মতামত</a></li>
+            <li class="nav-item"><a class="catLink nav-link px-2" href="#">ভিডিও</a></li>
+
+
+
+            <!-- mobile-only extras so the scrolled tail of the bar matches the app -->
+            <li class="nav-item d-lg-none"><a class="catLink nav-link px-2" href="#">সোশ্যাল মিডিয়া</a></li>
+            <li class="nav-item d-lg-none"><a class="catLink nav-link px-2" href="#">বিচিত্র</a></li>
+            <li class="nav-item d-lg-none"><a class="catLink nav-link px-2" href="#">অডিও</a></li>
+            <li class="nav-item d-lg-none"><a class="catLink nav-link px-2" href="#">ই-পেপার</a></li>
+
+
+
+            <li class="nav-item2 megaMenuParent fw-bold d-none d-lg-inline-block">
+              <a class="catLink2 nav-link2 px-2 text-black" href="#" aria-label="More categories">
+                <i class="fa-solid fa-bars fs-5"></i>
+              </a>
+
+              <div class="megaMenu bg-white shadow-lg border rounded-0">
+                <div class="container-fluid px-4 py-4">
+                  <div class="border-bottom pb-3 mb-4">
+                    <p class="mb-0 fw-semibold text-dark">সোমবার, ১০ আগস্ট ২০২৬, ২৬ শ্রাবণ ১৪৩৩</p>
+                  </div>
+
+                  <div class="row g-4">
+                    <div class="col-6 col-md">
+                      <ul class="list-unstyled mb-0 fw-bold">
+                        <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">সর্বশেষ</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">বাণিজ্য</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">রাজধানী</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">নারী-শিশু</a></li>
+                        <li><a href="#" class="megaLink text-dark text-decoration-none">রম্যবেলা</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">জাতীয়</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">বিনোদন</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">শিল্প-সাহিত্য</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">আইন ও পরামর্শ</a>
+                        </li>
+                        <li><a href="#" class="megaLink text-dark text-decoration-none">নির্বাচন</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">রাজনীতি</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">মতামত</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">প্রবাস</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">সোশ্যাল মিডিয়া</a>
+                        </li>
+                        <li><a href="#" class="megaLink text-dark text-decoration-none">অডিও</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">সারাদেশ</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">আইন-আদালত</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">প্রযুক্তি</a></li>
+                        <li><a href="#" class="megaLink text-dark text-decoration-none">বিচিত্র</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">বিশ্ব</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">অপরাধ</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">চাকরি</a></li>
+                        <li><a href="#" class="megaLink text-dark text-decoration-none">কর্পোরেট</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">খেলা</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">স্বাস্থ্য</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">চট্টগ্রাম
+                            সারাবেলা</a></li>
+                        <li><a href="#" class="megaLink text-dark text-decoration-none">পরিবেশ ও জলবায়ু</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">শিক্ষা</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">ধর্ম</a></li>
+                        <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">লাইফস্টাইল</a></li>
+                        <li><a href="#" class="megaLink text-dark text-decoration-none">পিএসআই</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="border-top pt-3 mt-4">
+                    <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
+                      <a href="#"
+                        class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                        <i class="fa-solid fa-circle-play me-2 iconPink"></i>ভিডিও স্টোরি
+                      </a>
+                      <a href="#"
+                        class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                        <i class="fa-solid fa-book-open me-2 iconBlue"></i>ফটো স্টোরি
+                      </a>
+                      <a href="#"
+                        class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                        <i class="fa-regular fa-image me-2 iconRed"></i>ফটোগ্যালারি
+                      </a>
+                      <a href="#"
+                        class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                        <i class="fa-solid fa-photo-film me-2 iconRed"></i>ভিডিও গ্যালারি
+                      </a>
+                      <a href="#"
+                        class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                        <i class="fa-solid fa-wave-square me-2 iconOrange"></i>অডিও
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MOBILE DROPDOWN PANEL (search + category list)
+  ========================================================= -->
+  <div id="mobileMenuPanel" class="mobileMenuPanel d-none d-lg-none">
+
+    <!-- scrollable category row, same items/order as the desktop categoryNav -->
+    <div class="mobilePanelNav">
+      <a class="catLink nav-link px-2" href="index.html"><i class="fa-solid fa-house"></i></a>
+      <a class="catLink nav-link px-2" href="#">সর্বশেষ</a>
+      <a class="catLink nav-link px-2" href="#">জাতীয়</a>
+      <a class="catLink nav-link px-2 active" href="#">রাজনীতি</a>
+      <a class="catLink nav-link px-2" href="#">সারাদেশ</a>
+      <a class="catLink nav-link px-2" href="#">বিশ্ব</a>
+      <a class="catLink nav-link px-2" href="#">খেলা</a>
+      <a class="catLink nav-link px-2" href="#">শিক্ষা</a>
+      <a class="catLink nav-link px-2" href="#">বাণিজ্য</a>
+    </div>
+
+    <div class="container-fluid py-3">
+      <div class="input-group mb-3 mobileSearchBox">
+        <input type="text" class="form-control" placeholder="যা খুঁজতে চান...">
+        <button class="btn btn-danger" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="row row-cols-2 g-3 mobileCatList">
+        <div class="col"><a href="#" class="mobileCatLink">সর্বশেষ</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">জাতীয়</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">রাজনীতি</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">সারাদেশ</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">বিশ্ব</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">খেলা</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">শিক্ষা</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">বাণিজ্য</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">বিনোদন</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">মতামত</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">আইন-আদালত</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">অপরাধ</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">স্বাস্থ্য</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">ধর্ম</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">রাজধানী</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">শিল্প-সাহিত্য</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">প্রবাস</a></div>
+        <div class="col"><a href="#" class="mobileCatLink">প্রযুক্তি</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       STICKY HEADER (on scroll)
+  ========================================================= -->
+  <div class="sticky-head" id="stickyHead">
+    <div class="container-fluid">
+      <div class="sticky-inner d-flex align-items-center pt-3">
+        <!-- Brand & Date -->
+        <div style="flex-shrink:0;">
+          <a class="sticky-brand text-black text-decoration-none" href="#">
+            <img src="https://www.kalbela.com/templates/web-view/images/sitesym.png" alt="Kalbela">
+            <span class="date-text text-black">| ২৫ আগস্ট ২০২৬</span>
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="sticky-nav-wrap">
+          <nav>
+            <a class="catLink nav-link px-2" href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="#">সর্বশেষ</a>
+            <a class="active" href="#">জাতীয়</a>
+            <a href="#">রাজনীতি</a>
+            <a href="#">সারাদেশ</a>
+            <a href="#">বিশ্ব</a>
+            <a href="#">খেলা</a>
+            <a href="#">শিক্ষা</a>
+            <a href="#">বাণিজ্য</a>
+            <a href="#">বিনোদন</a>
+            <a href="#">মতামত</a>
+            <a href="#">আইন-আদালত</a>
+            <a href="#">ভিডিও</a>
+          </nav>
+        </div>
+
+        <!-- Mega Menu Trigger -->
+        <div style="flex-shrink:0;">
+          <div class="nav-item2 megaMenuParent pe-5">
+            <a class="catLink2 nav-link2 px-2 text-black" href="#" aria-label="More categories">
+              <i class="fa-solid fa-bars fs-5"></i>
+            </a>
+            <div class="megaMenu bg-white shadow-lg border rounded-0">
+              <div class="container-fluid px-4 py-4">
+                <div class="border-bottom pb-3 mb-4">
+                  <p class="mb-0 fw-semibold text-dark">মঙ্গলবার, ২৫ আগস্ট ২০২৬, ১০ ভাদ্র ১৪৩৩</p>
+                </div>
+                <div class="row g-4">
+                  <div class="col-6 col-md">
+                    <ul class="list-unstyled mb-0 fw-bold">
+                      <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">সর্বশেষ</a>
+                      </li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">বাণিজ্য</a></li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">রাজধানী</a></li>
+                      <li><a href="#" class="megaLink text-dark text-decoration-none">নারী-শিশু</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">জাতীয়</a>
+                      </li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">বিনোদন</a></li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">শিল্প-সাহিত্য</a>
+                      </li>
+                      <li><a href="#" class="megaLink text-dark text-decoration-none">আইন ও পরামর্শ</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">রাজনীতি</a>
+                      </li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">মতামত</a></li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">প্রবাস</a></li>
+                      <li><a href="#" class="megaLink text-dark text-decoration-none">সোশ্যাল মিডিয়া</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">সারাদেশ</a>
+                      </li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">আইন-আদালত</a></li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">প্রযুক্তি</a></li>
+                      <li><a href="#" class="megaLink text-dark text-decoration-none">বিচিত্র</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">বিশ্ব</a>
+                      </li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">অপরাধ</a></li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">চাকরি</a></li>
+                      <li><a href="#" class="megaLink text-dark text-decoration-none">কর্পোরেট</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">খেলা</a></li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">স্বাস্থ্য</a></li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">চট্টগ্রাম
+                          সারাবেলা</a></li>
+                      <li><a href="#" class="megaLink text-dark text-decoration-none">পরিবেশ ও জলবায়ু</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-3"><a href="#" class="megaLink fw-bold text-dark text-decoration-none">শিক্ষা</a>
+                      </li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">ধর্ম</a></li>
+                      <li class="mb-2"><a href="#" class="megaLink text-dark text-decoration-none">লাইফস্টাইল</a></li>
+                      <li><a href="#" class="megaLink text-dark text-decoration-none">নির্বাচন</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="border-top pt-3 mt-4">
+                  <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
+                    <a href="#"
+                      class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                      <i class="fa-solid fa-circle-play me-2 text-danger"></i>ভিডিও স্টোরি
+                    </a>
+                    <a href="#"
+                      class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                      <i class="fa-solid fa-book-open me-2 text-primary"></i>ফটো স্টোরি
+                    </a>
+                    <a href="#"
+                      class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                      <i class="fa-regular fa-image me-2 text-danger"></i>ফটোগ্যালারি
+                    </a>
+                    <a href="#"
+                      class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                      <i class="fa-solid fa-photo-film me-2 text-danger"></i>ভিডিও গ্যালারি
+                    </a>
+                    <a href="#"
+                      class="megaBottomLink d-inline-flex align-items-center text-dark text-decoration-none fw-semibold">
+                      <i class="fa-solid fa-wave-square me-2 text-warning"></i>অডিও
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="national-section container-fluid p-3 my-4 national-page-main" id="national-section">
+    <h1 class="national-title mb-3"><a class="national-title-link" href="national.html">জাতীয়</a></h1>
+    <div class="row g-3">
+      <!-- ==================================================
+             COLUMN 1 — FEATURED (BIG) CARD
+             size = the other two columns merged
+        =================================================== -->
+      <div class="col-lg-6">
+        <a class="national-card national-card-big d-block h-100" href="national.html#national-story-1"
+          id="national-story-1">
+          <img alt="বাংলাদেশ পুলিশ"
+            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&amp;fit=crop&amp;w=900&amp;q=80" />
+          <div class="national-card-overlay">
+            <h3 class="national-card-title">
+              ‘ছেড়ে দেওয়া’ উগ্রবাদীদের ধরতে ঘাম ঝরছে পুলিশের
+            </h3>
+          </div>
+        </a>
+      </div>
+      <!-- ==================================================
+             COLUMN 2 — 2 CARDS STACKED
+        =================================================== -->
+      <div class="col-lg-3">
+        <div class="d-flex flex-column gap-3 h-100">
+          <!-- CARD 1 -->
+          <a class="national-card national-card-sm" href="national.html#national-story-2" id="national-story-2">
+            <img alt="বাণিজ্যে গতি আনতে"
+              src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&amp;fit=crop&amp;w=700&amp;q=80" />
+            <div class="national-card-overlay">
+              <h3 class="national-card-title national-card-title-sm">
+                বাণিজ্যে গতি আনতে দুই টাস্কফোর্স গঠনের প্রস্তাব
+              </h3>
+            </div>
+          </a>
+          <!-- CARD 2 -->
+          <a class="national-card national-card-sm" href="national.html#national-story-3" id="national-story-3">
+            <img alt="গণমাধ্যম এখন"
+              src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&amp;fit=crop&amp;w=700&amp;q=80" />
+            <div class="national-card-overlay">
+              <h3 class="national-card-title national-card-title-sm">
+                গণমাধ্যম এখন অতীতের যে কোনো সময়ের চেয়ে বেশি স্বাধীন: তথ্য ও সম্প্রচারমন্ত্রী
+              </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- ==================================================
+             COLUMN 3 — 2 CARDS STACKED
+        =================================================== -->
+      <div class="col-lg-3">
+        <div class="d-flex flex-column gap-3 h-100">
+          <!-- CARD 3 -->
+          <a class="national-card national-card-sm" href="national.html#national-story-4" id="national-story-4">
+            <img alt="পর্যটন খাতে সহযোগিতা"
+              src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&amp;fit=crop&amp;w=700&amp;q=80" />
+            <div class="national-card-overlay">
+              <h3 class="national-card-title national-card-title-sm">
+                পর্যটন খাতে সহযোগিতা জোরদারে বাংলাদেশ-মালয়েশিয়ার বৈঠক
+              </h3>
+            </div>
+          </a>
+          <!-- CARD 4 -->
+          <a class="national-card national-card-sm" href="national.html#national-story-5" id="national-story-5">
+            <img alt="চাকরি গেল বিএসইসির"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=700&amp;q=80" />
+            <div class="national-card-overlay">
+              <h3 class="national-card-title national-card-title-sm">
+                চাকরি গেল বিএসইসির ১৭ কর্মকর্তার, বেতন কমলো ৫ জনের
+              </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <section class="py-4 bg-white">
+      <div class="container" style="max-width: 900px;">
+        <!-- CARD 1 -->
+        <a class="news-fade d-flex gap-3 gap-md-4 py-4 border-bottom text-decoration-none text-dark"
+          href="national.html#national-story-6" id="national-story-6">
+          <img alt="চাকরি গেল বিএসইসির" class="rounded flex-shrink-0"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+            style="width:220px; aspect-ratio:16/10; object-fit:cover;" />
+          <div>
+            <h3 class="news-title fs-4 fw-bold mb-2">চাকরি গেল বিএসইসির ১৭ কর্মকর্তার, বেতন কমলো ৫ জনের</h3>
+            <p class="news-desc text-secondary mb-0">
+              চাকরি বিধি লঙ্ঘনের দায়ে বাংলাদেশ সিকিউরিটিজ অ্যান্ড এক্সচেঞ্জ কমিশনের (বিএসইসি) ১৭ কর্মকর্তাকে
+              বাধ্যতামূলক অবসরে পাঠানোর সিদ্ধান্ত নিয়েছে কমিশন। একই ঘটনায় আরও পাঁচ কর্মকর্তার বেতন অবনমনের
+              শাস্তি দেওয়া হয়েছে। গতকাল মঙ্গলবার (১৮...
+            </p>
+          </div>
+        </a>
+        <!-- CARD 2 -->
+        <a class="news-fade d-flex gap-3 gap-md-4 py-4 border-bottom text-decoration-none text-dark"
+          href="national.html#national-story-7" id="national-story-7">
+          <img alt="রাষ্ট্রপতি নির্বাচনে" class="rounded flex-shrink-0"
+            src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+            style="width:220px; aspect-ratio:16/10; object-fit:cover;" />
+          <div>
+            <h3 class="news-title fs-4 fw-bold mb-2">রাষ্ট্রপতি নির্বাচনে যে প্রক্রিয়ায় ভোট দেবেন সংসদ সদস্যরা</h3>
+            <p class="news-desc text-secondary mb-0">
+              আগামী ২০ আগস্ট জাতীয় সংসদ ভবনের সংসদ কক্ষে রাষ্ট্রপতি নির্বাচনে ভোট দেবেন সংসদ সদস্যরা।
+              দুপুর ২টা থেকে বিকেল ৫টা পর্যন্ত চলবে ভোটগ্রহণ। রাষ্ট্রপতি নির্বাচনে মোট ভোটার ৩৪৯ জন।
+              ভোট দেওয়ার পুরো...
+            </p>
+          </div>
+        </a>
+        <!-- CARD 3 -->
+        <a class="news-fade d-flex gap-3 gap-md-4 py-4 border-bottom text-decoration-none text-dark"
+          href="national.html#national-story-8" id="national-story-8">
+          <img alt="পর্যটন খাতে সহযোগিতা" class="rounded flex-shrink-0"
+            src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+            style="width:220px; aspect-ratio:16/10; object-fit:cover;" />
+          <div>
+            <h3 class="news-title fs-4 fw-bold mb-2">পর্যটন খাতে সহযোগিতা জোরদারে বাংলাদেশ-মালয়েশিয়ার বৈঠক</h3>
+            <p class="news-desc text-secondary mb-0">
+              পর্যটন খাত উন্নয়নে পারস্পরিক সহযোগিতা বৃদ্ধির লক্ষ্যে ঢাকায় বাংলাদেশ ও মালয়েশিয়ার প্রতিনিধি
+              পর্যায়ে গুরুত্বপূর্ণ এক বৈঠক অনুষ্ঠিত হয়েছে। বৈঠকে দুই দেশের মধ্যে পর্যটন বিনিময় বাড়ানোর
+              বিষয়ে আলোচনা হয়...
+            </p>
+          </div>
+        </a>
+        <!-- CARD 4 -->
+        <a class="news-fade d-flex gap-3 gap-md-4 py-4 border-bottom text-decoration-none text-dark"
+          href="national.html#national-story-9" id="national-story-9">
+          <img alt="গণমাধ্যম এখন" class="rounded flex-shrink-0"
+            src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+            style="width:220px; aspect-ratio:16/10; object-fit:cover;" />
+          <div>
+            <h3 class="news-title fs-4 fw-bold mb-2">গণমাধ্যম এখন অতীতের যে কোনো সময়ের চেয়ে বেশি স্বাধীন: তথ্য ও
+              সম্প্রচারমন্ত্রী</h3>
+            <p class="news-desc text-secondary mb-0">
+              তথ্য ও সম্প্রচার মন্ত্রণালয়ের আয়োজনে এক অনুষ্ঠানে মন্ত্রী বলেন, দেশের গণমাধ্যম বর্তমানে
+              অতীতের যে কোনো সময়ের তুলনায় অনেক বেশি স্বাধীনভাবে কাজ করছে। সাংবাদিকদের নিরাপত্তা
+              নিশ্চিতেও সরকার...
+            </p>
+          </div>
+        </a>
+        <!-- CARD 5 -->
+        <a class="news-fade d-flex gap-3 gap-md-4 py-4 border-bottom text-decoration-none text-dark"
+          href="national.html#national-story-10" id="national-story-10">
+          <img alt="বাংলাদেশ পুলিশ" class="rounded flex-shrink-0"
+            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+            style="width:220px; aspect-ratio:16/10; object-fit:cover;" />
+          <div>
+            <h3 class="news-title fs-4 fw-bold mb-2">‘ছেড়ে দেওয়া’ উগ্রবাদীদের ধরতে ঘাম ঝরছে পুলিশের</h3>
+            <p class="news-desc text-secondary mb-0">
+              জঙ্গি দমন অভিযানে ছাড়া পাওয়া উগ্রবাদীদের ফের চিহ্নিত করে গ্রেপ্তারে মাঠে নেমেছে পুলিশের
+              একাধিক ইউনিট। সংশ্লিষ্ট সূত্র জানায়, তালিকাভুক্ত অন্তত অর্ধশত ব্যক্তির অবস্থান শনাক্তে
+              কাজ চলছে...
+            </p>
+          </div>
+        </a>
+        <!-- CARD 6 -->
+        <a class="news-fade d-flex gap-3 gap-md-4 py-4 border-bottom text-decoration-none text-dark"
+          href="national.html#national-story-11" id="national-story-11">
+          <img alt="নতুন পরিকল্পনা" class="rounded flex-shrink-0"
+            src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+            style="width:220px; aspect-ratio:16/10; object-fit:cover;" />
+          <div>
+            <h3 class="news-title fs-4 fw-bold mb-2">নতুন পরিকল্পনা নিয়ে সংবাদ সম্মেলনে বিস্তারিত বক্তব্য</h3>
+            <p class="news-desc text-secondary mb-0">
+              রাজধানীর একটি হোটেলে আয়োজিত সংবাদ সম্মেলনে সংশ্লিষ্ট কর্তৃপক্ষ আগামী দিনের পরিকল্পনা
+              নিয়ে বিস্তারিত তুলে ধরেন। এ সময় সাংবাদিকদের বিভিন্ন প্রশ্নের জবাবও দেওয়া হয়...
+            </p>
+          </div>
+        </a>
+        <!-- CARD 7 (last — still has bottom border like reference) -->
+        <a class="news-fade d-flex gap-3 gap-md-4 py-4 border-bottom text-decoration-none text-dark"
+          href="national.html#national-story-12" id="national-story-12">
+          <img alt="রাজধানীতে নতুন কর্মসূচি" class="rounded flex-shrink-0"
+            src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+            style="width:220px; aspect-ratio:16/10; object-fit:cover;" />
+          <div>
+            <h3 class="news-title fs-4 fw-bold mb-2">রাজধানীতে নতুন কর্মসূচির ঘোষণা আসছে আজ</h3>
+            <p class="news-desc text-secondary mb-0">
+              রাজধানীর প্রাণকেন্দ্রে আজ নতুন এক কর্মসূচির ঘোষণা দেওয়া হবে বলে জানিয়েছেন সংশ্লিষ্টরা।
+              কর্মসূচিটি স্থানীয় বাসিন্দাদের জন্য বিশেষভাবে গুরুত্বপূর্ণ হতে যাচ্ছে বলে মনে করা হচ্ছে...
+            </p>
+          </div>
+        </a>
+        <!-- LOAD MORE -->
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-primary fw-bold" type="button">
+            আরও
+          </button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  
+    <!-- =========================================================
+     FOOTER START (with logo)
+     ========================================================= -->
+
+    <footer class="bg-white mt-5" id="footer-navigation">
+
+
+        <!-- =====================================================
+         TOP NAVIGATION
+         ===================================================== -->
+
+        <div class="border-top border-bottom footer-top">
+
+            <div class="container-fluid px-0">
+
+                <div class="row align-items-center g-0">
+
+                    <!-- =================================================
+                     DESKTOP LOGO
+                     Hidden on mobile
+                     ================================================= -->
+
+                    <div class="col-lg-4 col-md-5 footer-top-logo">
+
+                        <div class="d-flex align-items-center py-2 px-2">
+
+                            <img
+                            src="asset/logos/logo.webp"
+                            alt="কালবেলা"
+                            width="130"
+                            height="30"
+                            class="img-fluid"
+                        >
+                            <!-- <h6 class="ps-1" style="margin-bottom: 0;font-size: 17px;line-height: 1.35;">
+                                বাংলাদেশ ও বিদেশের সকল খবর, মোবাইল নিউজ, লাইভ নিউজ, রাজনীতি, বাণিজ্য, দেশা, বাংলাদেশ সহ
+                                সকল সংগঠিত সেবার আপত্তি পত্রিক করণ কালবেলা ডট কম।
+                            </h6> -->
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                     NAVIGATION
+                     ================================================= -->
+
+                    <div class="col-lg-8 col-md-7 footer-top-navigation px-0">
+
+                        <nav class="bottom-navigation d-flex flex-wrap justify-content-md-end align-items-center"
+                            aria-label="Footer navigation">
+
+                            <a href="/about" class="px-2 py-1">
+                                কালবেলা
+                            </a>
+
+                            <a href="/privacy-policy" class="px-2 py-1">
+                                গোপনীয়তার নীতি
+                            </a>
+
+                            <a href="/terms" class="px-2 py-1">
+                                শর্তাবলি
+                            </a>
+
+                            <a href="/comment-policy" class="px-2 py-1">
+                                মন্তব্য প্রকাশের নীতিমালা
+                            </a>
+
+                            <a href="/converter" target="_blank" rel="noopener noreferrer" class="px-2 py-1">
+                                বাংলা কনভার্টার
+                            </a>
+
+                            <a href="/advertisement" class="px-2 py-1">
+                                বিজ্ঞাপন
+                            </a>
+
+                            <a href="/contact-us" class="px-2 py-1">
+                                যোগাযোগ
+                            </a>
+
+                            <!-- NEW: was missing vs. the reference site -->
+                            <a href="/holidays" class="px-2 py-1">
+                                ছুটির তালিকা
+                            </a>
+
+                            <!-- NEW: was missing vs. the reference site -->
+                            <a href="/days" class="px-2 py-1">
+                                দিবস
+                            </a>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+         EDITOR / CONTACT
+         ===================================================== -->
+
+        <div class="container-fluid px-1 py-2 site-address">
+
+            <div class="row g-0">
+
+                <!-- =================================================
+                 LEFT SIDE
+                 ================================================= -->
+
+                <div class="col-md-6 px-2 editor-publisher text-md-start">
+
+                    <p class="site-add-p">
+
+                        <span class="fw-bold">
+                            সম্পাদক: সন্তোষ শর্মা । প্রকাশক: মিয়া নুরুদ্দিন আহাম্মেদ অপু
+                        </span>
+
+                    </p>
+
+                    <!-- Desktop address -->
+                    <address class="footer-address mb-0">
+
+                        কালবেলা মিডিয়া লিমিটেডের পক্ষে প্রকাশক কর্তৃক নিউমার্কেট সিটি কমপ্লেক্স,
+                        ৪৪/১, রহিম স্কয়ার, নিউমার্কেট, ঢাকা থেকে প্রকাশিত এবং ২৮/বি,
+                        টয়েনবি সার্কুলার রোড, মতিঝিল ঢাকা, শরীয়তপুর প্রিন্টিং প্রেস থেকে
+                        মুদ্রিত।
+
+                    </address>
+
+                </div>
+
+
+                <!-- =================================================
+                 RIGHT SIDE - DESKTOP CONTACT
+                 ================================================= -->
+
+                <div class="col-md-6 px-2">
+
+                    <p class="contact-info">
+
+                        ফোন : +৮৮ ০২ ৪৪৬১৭০০৩, +৮৮ ০২ ৪৪৬১৭০০৪ ।<br>
+
+                        ফ্যাক্স : +৮৮ ০২ ৪৪৬১৭০০২ । ই-মেইল:
+                        <a href="#">
+                            news@kalbela.com
+                        </a><br>
+
+                        বিজ্ঞাপন বিভাগ: ফোন: +৮৮ ০২ ৪৪৬১৭০০৫, ০১৭৩০ ০৯৩৩২৮ ।
+                        ই-মেইল:
+                        <a href="#">
+                            ads@kalbela.com
+                        </a><br>
+
+                        সার্কুলেশন : ফোন: ০১৭৩০ ০৯৩৩৪৭ ।
+                        কালবেলা মিডিয়া লিমিটেডের একটি প্রকাশনা।
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+         MOBILE DESCRIPTION
+         Visible only on mobile
+         ===================================================== -->
+
+        <div class="d-none mobile-description-wrapper">
+
+            <p class="mobile-description">
+                বাংলাদেশ ও বিশ্বের সকল খবর, ব্রেকিং নিউজ, লাইভ নিউজ,
+                রাজনীতি, বাণিজ্য, খেলা, বিনোদনসহ সকল সর্বশেষ সংবাদ
+                সবার আগে পড়তে ক্লিক করুন কালবেলা ডট কম।
+            </p>
+
+        </div>
+
+
+        <!-- =====================================================
+         SOCIAL / NEWSLETTER / MOBILE APPS
+         ===================================================== -->
+
+        <div id="footer-social" class="border-top border-bottom py-2">
+
+            <div class="container-fluid px-1">
+
+                <div class="row align-items-start g-0">
+
+
+                    <!-- =================================================
+                     SOCIAL MEDIA
+                     Desktop: 7 columns
+                     Mobile: 12 columns
+                     ================================================= -->
+
+                    <div class="col-12 col-md-7 px-2 social-column">
+
+                        <div class="d-flex flex-column align-items-start">
+
+                            <!-- Social title (label only, not interactive) -->
+                            <div class="social-title d-inline-flex align-items-center">
+
+                                <i class="fa-solid fa-circle-nodes footer-title-icon" aria-hidden="true"></i>
+
+                                <span class="social-title-text fw-bold">
+                                    সোশ্যাল মিডিয়া
+                                </span>
+
+                            </div>
+
+
+                            <!-- Social icons -->
+                            <div class="social-links d-flex align-items-center gap-2 mt-1">
+
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/kalbeladigital/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook facebook-icon" aria-hidden="true"></i>
+                                </a>
+
+
+                                <!-- YouTube -->
+                                <a href="https://www.youtube.com/@kalbelanews24" target="_blank"
+                                    rel="noopener noreferrer" aria-label="YouTube">
+                                    <i class="fa-brands fa-youtube youtube-icon" aria-hidden="true"></i>
+                                </a>
+
+
+                                <!-- Twitter -->
+                                <a href="https://twitter.com/kalbeladigital" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Twitter">
+                                    <i class="fa-brands fa-twitter twitter-icon" aria-hidden="true"></i>
+                                </a>
+
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/company/kalbeladigital/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin linkedin-icon" aria-hidden="true"></i>
+                                </a>
+
+
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/kalbela_digital/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram instagram-icon" aria-hidden="true"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                     NEWSLETTER
+                     Desktop: 3 columns
+                     Mobile: 6 columns
+                     ================================================= -->
+
+                    <div class="col-6 col-md-3 px-2 newsletter-column">
+
+                        <div class="newsletter">
+
+                            <h5 class="newsletter-title d-flex align-items-center mb-1">
+
+                                <i class="fa-regular fa-envelope-open footer-title-icon" aria-hidden="true"></i>
+
+                                <span>
+                                    নিউজলেটার
+                                </span>
+
+                            </h5>
+
+
+                            <div class="newsletter-description">
+
+                                কালবেলা থেকে প্রতিদিন মেইলে আপডেট পেতে
+                                সাবস্ক্রাইব করুন।
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                     MOBILE APPS
+                     Desktop: 2 columns
+                     Mobile: 6 columns
+                     ================================================= -->
+
+                    <div class="col-6 col-md-2 px-2 mobile-app-column">
+
+                        <div class="mobile_app">
+
+                            <h5 class="mobile-app-title d-flex align-items-center mb-1">
+
+                                <i class="fa-solid fa-mobile-screen-button footer-title-icon" aria-hidden="true"></i>
+
+                                <span>
+                                    মোবাইল অ্যাপস
+                                </span>
+
+                            </h5>
+
+
+                            <div class="d-flex flex-column">
+
+                                <!-- Android -->
+                                <a href="https://play.google.com/store/apps/details?id=apps.newspaper.kalbela"
+                                    target="_blank" rel="noopener noreferrer" class="app-link lh-sm mb-1">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-2" aria-hidden="true"></i>
+
+                                    অ্যান্ড্রয়েড
+
+                                </a>
+
+
+                                <!-- iPhone -->
+                                <a href="https://apps.apple.com/us/app/kalbela-bangla-newspaper/id6476605509?platform=iphone"
+                                    target="_blank" rel="noopener noreferrer" class="app-link lh-sm">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-2" aria-hidden="true"></i>
+
+                                    আইফোন
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+         COPYRIGHT / DISCLAIMER
+         ===================================================== -->
+
+        <div class="bg-light py-2 copyright-wrapper">
+
+            <div class="container-fluid px-1">
+
+                <div class="copyright-content d-flex flex-wrap justify-content-between align-items-center gap-2 px-2">
+
+                    <!-- Copyright -->
+                    <div class="copyright-text fs-5">
+                        স্বত্ব © কালবেলা মিডিয়া লিমিটেড ২০২৬
+                    </div>
+
+                    <!-- Disclaimer -->
+                    <div class="copyright-disclaimer fs-5">
+                        ওয়েবসাইটের কোনো লেখা, ছবি, ভিডিও অনুমতি ছাড়া ব্যবহার বেআইনি।
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+         BACK TO TOP
+         Hidden by default; shown via JS after scrolling down
+         ===================================================== -->
+
+        <button type="button" id="backToTop" class="back-to-top d-flex align-items-center justify-content-center"
+            aria-label="Back to top" title="Back to top">
+
+            <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+
+        </button>
+
+    </footer>
+
+    
+  <script crossorigin="anonymous"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="national-shared.js"></script>
+  
+</body>
+
+</html>

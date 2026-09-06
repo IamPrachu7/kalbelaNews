@@ -1,0 +1,831 @@
+/* =========================================================
+   KALBELA FOOTER
+   Desktop + Mobile
+   Bootstrap 5 compatible
+   ========================================================= */
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+#footer-navigation {
+    margin-top: 40px;
+    color: #222;
+    font-family: "Noto Serif Bengali", "SolaimanLipi", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
+    background: #fff;
+}
+
+#footer-navigation *,
+#footer-navigation *::before,
+#footer-navigation *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TOP NAVIGATION
+   ========================================================= */
+
+#footer-navigation .footer-top {
+    min-height: 70px;
+    border-color: #dee2e6 !important;
+}
+
+#footer-navigation .footer-top > .container-fluid {
+    height: 100px;
+}
+
+#footer-navigation .footer-top .row {
+    min-height: 75px;
+}
+
+
+/* LEFT DESCRIPTION */
+
+#footer-navigation .footer-top-logo {
+    display: flex;
+    align-items: center;
+}
+
+#footer-navigation .footer-top-logo > div {
+    width: 100%;
+    padding: 15px 10px !important;
+}
+
+#footer-navigation .footer-top-logo h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+
+/* TOP NAV */
+
+#footer-navigation .footer-top-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 123px;
+}
+
+#footer-navigation .bottom-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 8px;
+    padding: 8px 20px 8px 10px;
+}
+
+#footer-navigation .bottom-navigation a {
+    flex: 0 0 auto;
+    padding: 2px 0 !important;
+    color: #222;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.45;
+    white-space: nowrap;
+}
+
+#footer-navigation .bottom-navigation a:hover {
+    color: #028bf7 !important;
+}
+
+
+/* =========================================================
+   EDITOR / CONTACT
+   ========================================================= */
+
+#footer-navigation .site-address {
+    min-height: 114px;
+    padding: 17px 10px 18px !important;
+    font-size: 15px;
+}
+
+#footer-navigation .site-address .row {
+    min-height: 78px;
+}
+
+#footer-navigation .editor-publisher {
+    padding-right: 25px !important;
+}
+
+#footer-navigation .site-add-p {
+    margin: 0 0 5px !important;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#footer-navigation .site-add-p .fw-bold {
+    font-weight: 700 !important;
+}
+
+#footer-navigation .footer-address {
+    font-size: 15px;
+    font-style: normal;
+    line-height: 1.55;
+}
+
+#footer-navigation .contact-info {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#footer-navigation .contact-info a {
+    color: #222;
+    text-decoration: none;
+}
+
+#footer-navigation .contact-info a:hover {
+    color: #007bff;
+}
+
+
+/* =========================================================
+   SOCIAL / NEWSLETTER / MOBILE APP
+   ========================================================= */
+
+#footer-navigation #footer-social {
+    min-height: 97px;
+    padding: 12px 0 14px !important;
+    border-color: #dee2e6 !important;
+}
+
+#footer-navigation #footer-social > .container-fluid {
+    height: 100%;
+}
+
+#footer-navigation #footer-social .row {
+    min-height: 82px;
+}
+
+
+/* =========================================================
+   TITLE ICONS
+   ========================================================= */
+
+#footer-navigation .footer-title-icon {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 31px;
+    padding-right: 7px;
+    margin-right: 7px;
+
+    border-right: 2px solid #cfcfcf;
+
+    color: #222;
+    font-size: 31px;
+    line-height: 1;
+}
+
+
+/* SOCIAL TITLE */
+
+#footer-navigation .social-title {
+    height: 31px;
+}
+
+#footer-navigation .social-title-text {
+    font-size: 15px;
+    font-weight: 700;
+    /* line-height: 1; */
+}
+
+
+/* NEWSLETTER TITLE */
+
+#footer-navigation .newsletter-title,
+#footer-navigation .mobile-app-title {
+    height: 32px;
+    margin: 0 0 7px !important;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#footer-navigation .newsletter-title span,
+#footer-navigation .mobile-app-title span {
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+   ========================================================= */
+
+#footer-navigation .social-links {
+    display: flex;
+    align-items: center;
+    gap: 9px !important;
+    margin-top: 8px !important;
+}
+
+#footer-navigation .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: inherit;
+    text-decoration: none;
+    line-height: 1;
+}
+
+
+/* FACEBOOK */
+
+#footer-navigation .facebook-icon {
+    color: #1877f2;
+    font-size: 34px;
+}
+
+
+/* YOUTUBE */
+
+#footer-navigation .youtube-icon {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fe0000;
+    color: #fff;
+
+    border-radius: 50%;
+
+    font-size: 19px;
+}
+
+
+/* TWITTER */
+
+#footer-navigation .twitter-icon {
+    color: #03a9f5;
+    font-size: 29px;
+}
+
+
+/* LINKEDIN */
+
+#footer-navigation .linkedin-icon {
+    color: #0077b5;
+    font-size: 31px;
+}
+
+
+/* INSTAGRAM */
+
+#footer-navigation .instagram-icon {
+    font-size: 34px;
+
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+
+#footer-navigation .newsletter {
+    margin: 0;
+    padding: 0;
+}
+
+#footer-navigation .newsletter-column {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+#footer-navigation .newsletter-description {
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+#footer-navigation .newsletter-title,
+#footer-navigation .mobile-app-title {
+    cursor: pointer;
+}
+
+#footer-navigation .newsletter-title:hover,
+#footer-navigation .newsletter-title:hover i,
+#footer-navigation .newsletter-title:hover span,
+#footer-navigation .mobile-app-title:hover,
+#footer-navigation .mobile-app-title:hover i,
+#footer-navigation .mobile-app-title:hover span {
+    color: #007bff !important;
+}
+
+
+/* =========================================================
+   MOBILE APP
+   ========================================================= */
+
+#footer-navigation .mobile-app-column {
+    padding-left: 5px !important;
+    padding-right: 8px !important;
+}
+
+#footer-navigation .mobile_app {
+    margin: 0;
+    padding: 0;
+}
+
+#footer-navigation .app-link {
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+    max-width: 100%;
+
+    color: #222;
+    text-decoration: none;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#footer-navigation .app-link i {
+    width: 15px;
+    margin-right: 7px !important;
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer-navigation .app-link:hover,
+#footer-navigation .app-link:hover i {
+    color: #007bff !important;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+   ========================================================= */
+
+#footer-navigation .copyright-wrapper {
+    min-height: 40px;
+    padding: 7px 0 !important;
+    background: #f5f5f5 !important;
+}
+
+#footer-navigation .copyright-content {
+    min-height: 25px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+#footer-navigation .copyright-text,
+#footer-navigation .copyright-disclaimer {
+    margin: 0;
+    font-size: 15px !important;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#footer-navigation .copyright-disclaimer {
+    text-align: right;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+#footer-navigation .back-to-top {
+    position: fixed;
+
+    right: 28px;
+    bottom: 27px;
+
+    width: 40px;
+    height: 40px;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 2px solid #222;
+    border-radius: 50%;
+
+    background: #fff;
+    color: #222;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(8px);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+#footer-navigation .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#footer-navigation .back-to-top i {
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer-navigation .back-to-top:hover {
+    background: #222;
+    color: #fff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+
+    #footer-navigation .bottom-navigation {
+        column-gap: 20px;
+        padding-right: 12px;
+    }
+
+    #footer-navigation .bottom-navigation a {
+        font-size: 15px;
+    }
+
+    #footer-navigation .site-address {
+        font-size: 14px;
+    }
+
+    #footer-navigation .site-add-p {
+        font-size: 14px;
+    }
+
+    #footer-navigation .footer-address,
+    #footer-navigation .contact-info {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+
+    /* -----------------------------------------------------
+       TOP NAVIGATION
+       ----------------------------------------------------- */
+
+    #footer-navigation .footer-top {
+        min-height: auto;
+    }
+
+    #footer-navigation .footer-top-logo {
+        display: none !important;
+    }
+
+    #footer-navigation .footer-top-navigation {
+        width: 100%;
+        min-height: auto;
+    }
+
+    #footer-navigation .footer-top-navigation {
+        overflow: hidden;
+    }
+
+    #footer-navigation .bottom-navigation {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: nowrap !important;
+
+        justify-content: flex-start !important;
+        align-items: center;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        gap: 0 !important;
+
+        padding: 0 !important;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+
+        white-space: nowrap;
+
+        box-shadow:
+            0 -3px 6px rgba(0, 0, 0, 0.10),
+            0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    #footer-navigation .bottom-navigation::-webkit-scrollbar {
+        display: none;
+    }
+
+    #footer-navigation .bottom-navigation a {
+        position: relative;
+
+        flex: 0 0 auto;
+
+        padding: 9px 14px !important;
+
+        font-size: 20px;
+        font-weight: 600;
+
+        line-height: 1.5;
+
+        white-space: nowrap;
+    }
+
+    /* Small divider between mobile navigation items */
+
+    #footer-navigation .bottom-navigation a:not(:last-child)::after {
+        content: "";
+
+        position: absolute;
+
+        right: 0;
+        top: 50%;
+
+        width: 1px;
+        height: 17px;
+
+        transform: translateY(-50%);
+
+        background: #d3d3d3;
+    }
+
+    #footer-navigation .bottom-navigation a:first-child {
+        padding-left: 24px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       EDITOR / PUBLISHER
+       ----------------------------------------------------- */
+
+    #footer-navigation .site-address {
+        min-height: auto;
+
+        padding: 24px 15px 18px !important;
+
+        font-size: 17px;
+    }
+
+    #footer-navigation .site-address .row {
+        display: block;
+        min-height: auto;
+    }
+
+    #footer-navigation .site-address .col-md-6 {
+        width: 100%;
+
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #footer-navigation .editor-publisher {
+        margin-bottom: 20px !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        text-align: center;
+    }
+
+    #footer-navigation .site-add-p {
+        margin-bottom: 0 !important;
+
+        font-size: 24px;
+        font-weight: 400 !important;
+
+        line-height: 1.45;
+    }
+
+    #footer-navigation .site-add-p .fw-bold {
+        font-weight: 400 !important;
+    }
+
+    #footer-navigation .footer-address,
+    #footer-navigation .contact-info {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE DESCRIPTION
+       ----------------------------------------------------- */
+
+    #footer-navigation .mobile-description-wrapper {
+        display: block !important;
+
+        border-top: 1px solid #dee2e6;
+
+        padding: 20px 15px 18px;
+    }
+
+    #footer-navigation .mobile-description {
+        margin: 0;
+
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+
+    /* -----------------------------------------------------
+       SOCIAL / NEWSLETTER / APPS
+       ----------------------------------------------------- */
+
+    #footer-navigation #footer-social {
+        min-height: auto;
+
+        padding: 16px 0 !important;
+    }
+
+    #footer-navigation #footer-social .row {
+        min-height: auto;
+    }
+
+    #footer-navigation .social-column {
+        width: 100%;
+
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-bottom: 16px;
+
+        margin-bottom: 18px;
+
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    #footer-navigation .newsletter-column,
+    #footer-navigation .mobile-app-column {
+        width: 50%;
+
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+
+    /* MOBILE TITLE ICONS */
+
+    #footer-navigation .social-title .footer-title-icon,
+    #footer-navigation .newsletter-title .footer-title-icon,
+    #footer-navigation .mobile-app-title .footer-title-icon {
+        height: 37px;
+
+        font-size: 36px;
+
+        padding-right: 7px;
+        margin-right: 7px;
+    }
+
+    #footer-navigation .social-title-text,
+    #footer-navigation .newsletter-title,
+    #footer-navigation .mobile-app-title {
+        font-size: 21px !important;
+    }
+
+
+    /* MOBILE SOCIAL ICONS */
+
+    #footer-navigation .social-links {
+        margin-top: 12px !important;
+        gap: 16px !important;
+    }
+
+    #footer-navigation .facebook-icon {
+        font-size: 45px;
+    }
+
+    #footer-navigation .youtube-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    #footer-navigation .twitter-icon {
+        font-size: 40px;
+    }
+
+    #footer-navigation .linkedin-icon {
+        font-size: 42px;
+    }
+
+    #footer-navigation .instagram-icon {
+        font-size: 45px;
+    }
+
+
+    /* MOBILE NEWSLETTER */
+
+    #footer-navigation .newsletter-title,
+    #footer-navigation .mobile-app-title {
+        margin-bottom: 8px !important;
+    }
+
+    #footer-navigation .newsletter-description {
+        max-width: 100%;
+
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+
+    /* MOBILE APP LINKS */
+
+    #footer-navigation .app-link {
+        font-size: 18px;
+        line-height: 1.6 !important;
+    }
+
+    #footer-navigation .app-link i {
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       COPYRIGHT
+       ----------------------------------------------------- */
+
+    #footer-navigation .copyright-wrapper {
+        min-height: 40px;
+
+        padding: 6px 0 !important;
+    }
+
+    #footer-navigation .copyright-content {
+        display: flex;
+
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+
+        gap: 8px !important;
+
+        min-height: auto;
+    }
+
+    #footer-navigation .copyright-disclaimer {
+        order: 1;
+
+        text-align: left;
+
+        font-size: 17px !important;
+        line-height: 1.5;
+    }
+
+    #footer-navigation .copyright-text {
+        order: 2;
+
+        font-size: 17px !important;
+        line-height: 1.5;
+    }
+
+
+    /* -----------------------------------------------------
+       BACK TO TOP
+       ----------------------------------------------------- */
+
+    #footer-navigation .back-to-top {
+        right: 28px;
+        bottom: 27px;
+
+        width: 40px;
+        height: 4px;
+    }
+
+}

@@ -1,9 +1,8 @@
 
 
-
-/* =========================================================
-   notification light
-========================================================= */
+    /* =========================================================
+       notification light
+    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
     const bell = document.getElementById("notificationBell");
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const elapsed = Date.now() - parseInt(hiddenTime, 10);
         if (elapsed < COOLDOWN_TIME) {
             dot.style.display = "none"; // Keep it hidden
-
+            
             // Automatically bring it back after the remaining time finishes
             const remainingTime = COOLDOWN_TIME - elapsed;
             setTimeout(() => {
@@ -35,13 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // 2. When the user hovers over the bell icon container
     bell.addEventListener("mouseenter", function () {
         dot.style.display = "none"; // Hide visually
-
+        
         // Save the exact current timestamp
         localStorage.setItem("notificationHiddenTime", Date.now());
 
         // Bring it back automatically after 20 seconds if they stay on the page
         if (window.notificationTimeout) clearTimeout(window.notificationTimeout);
-
+        
         window.notificationTimeout = setTimeout(() => {
             dot.style.display = "block";
             localStorage.removeItem("notificationHiddenTime");
@@ -50,213 +49,210 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* =========================================================
-   DESKTOP STICKY HEADER
-   Only works at 992px and above
-========================================================= */
+    /* =========================================================
+       DESKTOP STICKY HEADER
+       Only works at 992px and above
+    ========================================================= */
 
 
-document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
 
-    const backToTop = document.getElementById('backToTop');
+      const backToTop = document.getElementById('backToTop');
 
-    if (!backToTop) {
+      if (!backToTop) {
         return;
-    }
+      }
 
-    const SHOW_AFTER_PX = 300;
+      const SHOW_AFTER_PX = 300;
 
-    function toggleVisibility() {
+      function toggleVisibility() {
         if (window.scrollY > SHOW_AFTER_PX) {
-            backToTop.classList.add('show');
+          backToTop.classList.add('show');
         } else {
-            backToTop.classList.remove('show');
+          backToTop.classList.remove('show');
         }
-    }
+      }
 
-    // Set correct state on load (e.g. page opened mid-scroll)
-    toggleVisibility();
+      // Set correct state on load (e.g. page opened mid-scroll)
+      toggleVisibility();
 
-    window.addEventListener('scroll', toggleVisibility, { passive: true });
+      window.addEventListener('scroll', toggleVisibility, { passive: true });
 
-    backToTop.addEventListener('click', function () {
+      backToTop.addEventListener('click', function () {
 
         window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+          top: 0,
+          behavior: 'smooth'
         });
+
+      });
 
     });
 
-});
+    const stickyHead = document.getElementById('stickyHead');
 
-const stickyHead = document.getElementById('stickyHead');
+    function updateStickyHeader() {
+      if (!stickyHead) return;
 
-function updateStickyHeader() {
-    if (!stickyHead) return;
+      const isDesktop = window.matchMedia('(min-width: 992px)').matches;
 
-    const isDesktop = window.matchMedia('(min-width: 992px)').matches;
-
-    if (!isDesktop) {
+      if (!isDesktop) {
         stickyHead.classList.remove('show');
         return;
-    }
+      }
 
-    if (window.scrollY > 80) {
+      if (window.scrollY > 80) {
         stickyHead.classList.add('show');
-    } else {
+      } else {
         stickyHead.classList.remove('show');
+      }
     }
-}
 
-window.addEventListener('scroll', updateStickyHeader, {
-    passive: true
-});
+    window.addEventListener('scroll', updateStickyHeader, {
+      passive: true
+    });
 
-window.addEventListener('resize', updateStickyHeader);
+    window.addEventListener('resize', updateStickyHeader);
 
-updateStickyHeader();
-
-
-/* =========================================================
-   MOBILE HAMBURGER MENU
-========================================================= */
-
-const mobileMenuToggle =
-    document.getElementById('mobileMenuToggle');
-
-const mobileMenuPanel =
-    document.getElementById('mobileMenuPanel');
-
-let scrollYBeforeOpen = 0;
+    updateStickyHeader();
 
 
-function setPanelOffset() {
+    /* =========================================================
+       MOBILE HAMBURGER MENU
+    ========================================================= */
 
-    if (!mobileMenuPanel) return;
+    const mobileMenuToggle =
+      document.getElementById('mobileMenuToggle');
 
-    const headerEl =
+    const mobileMenuPanel =
+      document.getElementById('mobileMenuPanel');
+
+    let scrollYBeforeOpen = 0;
+
+
+    function setPanelOffset() {
+
+      if (!mobileMenuPanel) return;
+
+      const headerEl =
         document.getElementById('minherder');
 
-    if (!headerEl) return;
+      if (!headerEl) return;
 
-    const bottom =
+      const bottom =
         headerEl.getBoundingClientRect().bottom;
 
-    mobileMenuPanel.style.top = `${bottom}px`;
-}
+      mobileMenuPanel.style.top = `${bottom}px`;
+    }
 
 
-window.addEventListener('resize', setPanelOffset);
+    window.addEventListener('resize', setPanelOffset);
 
 
-function openMobileMenu() {
+    function openMobileMenu() {
 
-    if (!mobileMenuToggle || !mobileMenuPanel) return;
+      if (!mobileMenuToggle || !mobileMenuPanel) return;
 
-    scrollYBeforeOpen = window.scrollY;
+      scrollYBeforeOpen = window.scrollY;
 
-    setPanelOffset();
+      setPanelOffset();
 
-    mobileMenuPanel.classList.remove('d-none');
+      mobileMenuPanel.classList.remove('d-none');
 
-    document.body.classList.add('menu-open');
+      document.body.classList.add('menu-open');
 
-    document.body.style.top =
+      document.body.style.top =
         `-${scrollYBeforeOpen}px`;
 
-    mobileMenuToggle.setAttribute(
+      mobileMenuToggle.setAttribute(
         'aria-expanded',
         'true'
-    );
+      );
 
-    const icon =
+      const icon =
         mobileMenuToggle.querySelector('i');
 
-    if (icon) {
+      if (icon) {
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-xmark');
+      }
     }
-}
 
 
-function closeMobileMenu() {
+    function closeMobileMenu() {
 
-    if (!mobileMenuToggle || !mobileMenuPanel) return;
+      if (!mobileMenuToggle || !mobileMenuPanel) return;
 
-    mobileMenuPanel.classList.add('d-none');
+      mobileMenuPanel.classList.add('d-none');
 
-    document.body.classList.remove('menu-open');
+      document.body.classList.remove('menu-open');
 
-    document.body.style.top = '';
+      document.body.style.top = '';
 
-    window.scrollTo(
+      window.scrollTo(
         0,
         scrollYBeforeOpen
-    );
+      );
 
-    mobileMenuToggle.setAttribute(
+      mobileMenuToggle.setAttribute(
         'aria-expanded',
         'false'
-    );
+      );
 
-    const icon =
+      const icon =
         mobileMenuToggle.querySelector('i');
 
-    if (icon) {
+      if (icon) {
         icon.classList.remove('fa-xmark');
         icon.classList.add('fa-bars');
+      }
     }
-}
 
 
-if (mobileMenuToggle && mobileMenuPanel) {
+    if (mobileMenuToggle && mobileMenuPanel) {
 
-    mobileMenuToggle.addEventListener(
+      mobileMenuToggle.addEventListener(
         'click',
         () => {
 
-            const isOpen =
-                !mobileMenuPanel.classList.contains(
-                    'd-none'
-                );
+          const isOpen =
+            !mobileMenuPanel.classList.contains(
+              'd-none'
+            );
 
-            isOpen
-                ? closeMobileMenu()
-                : openMobileMenu();
+          isOpen
+            ? closeMobileMenu()
+            : openMobileMenu();
         }
-    );
+      );
 
 
-    mobileMenuPanel.addEventListener(
+      mobileMenuPanel.addEventListener(
         'click',
         (e) => {
 
-            if (e.target.closest('a')) {
-                closeMobileMenu();
-            }
+          if (e.target.closest('a')) {
+            closeMobileMenu();
+          }
 
         }
-    );
-}
+      );
+    }
 
 
-function updateMobileCategoryOffset() {
-    const ad = document.querySelector('.sticky-top-ad');
-    const category = document.querySelector('.mobile-sticky-category');
+    function updateMobileCategoryOffset() {
+      const ad = document.querySelector('.sticky-top-ad');
+      const category = document.querySelector('.mobile-sticky-category');
 
-    if (!ad || !category) return;
+      if (!ad || !category) return;
 
-    const adHeight = ad.getBoundingClientRect().height;
+      const adHeight = ad.getBoundingClientRect().height;
 
-    category.style.top = `${adHeight}px`;
-}
+      category.style.top = `${adHeight}px`;
+    }
 
-window.addEventListener('load', updateMobileCategoryOffset);
-window.addEventListener('resize', updateMobileCategoryOffset);
-
-
-
+    window.addEventListener('load', updateMobileCategoryOffset);
+    window.addEventListener('resize', updateMobileCategoryOffset);
 
 
 
@@ -281,120 +277,6 @@ window.addEventListener('resize', updateMobileCategoryOffset);
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
-
-    /* =====================================================
-       "MORE CATEGORIES" OVERLAY MENU (hamburger / ☰)
-       Click to open/close, closes on backdrop click, outside
-       click, or Escape. Works the same on touch and desktop.
-    ===================================================== */
-    const megaMenuBackdrop = document.getElementById("megaMenuBackdrop");
-    const megaMenuParents = document.querySelectorAll(".megaMenuParent");
-
-    function closeAllMegaMenus() {
-        megaMenuParents.forEach(function (parent) {
-            parent.classList.remove("is-open");
-        });
-        if (megaMenuBackdrop) {
-            megaMenuBackdrop.classList.remove("is-open");
-        }
-    }
-
-    megaMenuParents.forEach(function (parent) {
-        const trigger = parent.querySelector(":scope > a");
-        if (!trigger) return;
-
-        trigger.addEventListener("click", function (event) {
-            event.preventDefault();
-            const wasOpen = parent.classList.contains("is-open");
-            closeAllMegaMenus();
-            if (!wasOpen) {
-                parent.classList.add("is-open");
-                if (megaMenuBackdrop) {
-                    megaMenuBackdrop.classList.add("is-open");
-                }
-            }
-        });
-    });
-
-    if (megaMenuBackdrop) {
-        megaMenuBackdrop.addEventListener("click", closeAllMegaMenus);
-    }
-
-    document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") closeAllMegaMenus();
-    });
-
-    /* =====================================================
-       HEADER SEARCH TOGGLE
-    ===================================================== */
-    const searchWrap = document.getElementById("searchWrap");
-    const searchToggleBtn = document.getElementById("searchToggleBtn");
-    const searchInput = document.getElementById("headerSearchInput");
-    const headerSearchForm = document.getElementById("headerSearchForm");
-
-    if (searchWrap && searchToggleBtn) {
-        function closeSearch() {
-            searchWrap.classList.remove("is-open");
-            searchToggleBtn.setAttribute("aria-expanded", "false");
-        }
-
-        function openSearch() {
-            searchWrap.classList.add("is-open");
-            searchToggleBtn.setAttribute("aria-expanded", "true");
-            if (searchInput) {
-                setTimeout(function () { searchInput.focus(); }, 50);
-            }
-        }
-
-        searchToggleBtn.addEventListener("click", function (event) {
-            event.preventDefault();
-            event.stopPropagation();
-            if (searchWrap.classList.contains("is-open")) {
-                closeSearch();
-            } else {
-                openSearch();
-            }
-        });
-
-        document.addEventListener("click", function (event) {
-            if (!searchWrap.contains(event.target)) {
-                closeSearch();
-            }
-        });
-
-        document.addEventListener("keydown", function (event) {
-            if (event.key === "Escape") closeSearch();
-        });
-
-        if (headerSearchForm) {
-            headerSearchForm.addEventListener("submit", function (event) {
-                event.preventDefault();
-                const query = searchInput ? searchInput.value.trim() : "";
-                if (query) {
-                    // Keep the header search interaction local until the real
-                    // search-results page is added. No broken-page redirect.
-                    searchWrap.classList.remove("is-open");
-                    searchToggleBtn.setAttribute("aria-expanded", "false");
-                    searchInput.value = query;
-                    searchInput.blur();
-                }
-            });
-        }
-    }
-
-    /* =====================================================
-       ACTIVE CATEGORY NAV STATE
-       Reads a data-active-category value on <body> (defaults
-       to "latest" for the homepage) and marks the matching
-       catLink as active in both the main and sticky nav bars.
-       A category page just needs to set, e.g.,
-       <body data-active-category="national"> for its own nav
-       item to light up correctly — nothing else to wire up.
-    ===================================================== */
-    const activeCategory = document.body.getAttribute("data-active-category") || "latest";
-    document.querySelectorAll(".catLink[data-category], .sticky-inner nav a[data-category]").forEach(function (link) {
-        link.classList.toggle("active", link.getAttribute("data-category") === activeCategory);
-    });
 
     /* =====================================================
        STICKY HEADER
@@ -466,29 +348,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /* =========================================================
-       STORY SLIDER (ভিডিও স্টোরি / ফটো স্টোরি)
+       STORY SLIDER (একবার)
     ========================================================= */
-    const storyVideoTrack = document.getElementById("storySliderTrack");
-    const storyPhotoTrack = document.getElementById("photoSliderTrack");
+    const storyTrack = document.getElementById("storySliderTrack");
     const prevStoryBtn = document.getElementById("prevStoryBtn");
     const nextStoryBtn = document.getElementById("nextStoryBtn");
-    const videoStoryTab = document.getElementById("videoStoryTab");
-    const photoStoryTab = document.getElementById("photoStoryTab");
 
-    if (storyVideoTrack && prevStoryBtn && nextStoryBtn) {
-        let activeStoryTrack = storyVideoTrack;
+    if (storyTrack && prevStoryBtn && nextStoryBtn) {
         let currentIndex = 0;
+        const totalCards = storyTrack.children.length;
 
         function updateStorySlider() {
-            const totalCards = activeStoryTrack.children.length;
             const shiftPercentage = currentIndex * 85;
-            activeStoryTrack.style.transform = `translateX(-${shiftPercentage}%)`;
+            storyTrack.style.transform = `translateX(-${shiftPercentage}%)`;
             prevStoryBtn.classList.toggle("d-none", currentIndex === 0);
             nextStoryBtn.classList.toggle("d-none", currentIndex >= totalCards - 1);
         }
 
         nextStoryBtn.addEventListener("click", function () {
-            const totalCards = activeStoryTrack.children.length;
             if (currentIndex < totalCards - 1) {
                 currentIndex++;
                 updateStorySlider();
@@ -501,44 +378,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 updateStorySlider();
             }
         });
-
-        function activateStoryTab(showPhotos) {
-            const nextTrack = showPhotos ? storyPhotoTrack : storyVideoTrack;
-            if (!nextTrack || nextTrack === activeStoryTrack) return;
-
-            activeStoryTrack.style.transform = "translateX(0%)";
-            activeStoryTrack.classList.add("d-none");
-            nextTrack.classList.remove("d-none");
-            activeStoryTrack = nextTrack;
-            currentIndex = 0;
-
-            const onTab = showPhotos ? photoStoryTab : videoStoryTab;
-            const offTab = showPhotos ? videoStoryTab : photoStoryTab;
-            if (onTab) {
-                onTab.classList.add("active-story-tab", "text-dark");
-                onTab.classList.remove("text-muted");
-            }
-            if (offTab) {
-                offTab.classList.remove("active-story-tab", "text-dark");
-                offTab.classList.add("text-muted");
-            }
-
-            updateStorySlider();
-        }
-
-        if (videoStoryTab) {
-            videoStoryTab.addEventListener("click", function (event) {
-                event.preventDefault();
-                activateStoryTab(false);
-            });
-        }
-
-        if (photoStoryTab) {
-            photoStoryTab.addEventListener("click", function (event) {
-                event.preventDefault();
-                activateStoryTab(true);
-            });
-        }
 
         updateStorySlider();
     }
@@ -1239,278 +1078,3 @@ mainCarousel.addEventListener(
 createThumbnails();
 
 updateCarousel();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const track = document.getElementById('storySliderTrack');
-    const prevBtn = document.getElementById('prevStoryBtn');
-    const nextBtn = document.getElementById('nextStoryBtn');
-
-    let currentIndex = 0;
-    const totalCards = track.children.length;
-
-    function updateSlider() {
-        // Shift track based on card width percentage + gap
-        const shiftPercentage = currentIndex * 85;
-        track.style.transform = `translateX(-${shiftPercentage}%)`;
-
-        // Toggle button visibility
-        if (currentIndex === 0) {
-            prevBtn.classList.add('d-none');
-        } else {
-            prevBtn.classList.remove('d-none');
-        }
-
-        if (currentIndex >= totalCards - 1) {
-            nextBtn.classList.add('d-none');
-        } else {
-            nextBtn.classList.remove('d-none');
-        }
-    }
-
-    nextBtn.addEventListener('click', () => {
-        if (currentIndex < totalCards - 1) {
-            currentIndex++;
-            updateSlider();
-        }
-    });
-
-    prevBtn.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
-        }
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const track = document.getElementById("videoTrack");
-    const prevButton = document.getElementById("videoPrev");
-    const nextButton = document.getElementById("videoNext");
-
-    let currentIndex = 0;
-
-
-    /* ======================================================
-       HOW MANY CARDS ARE VISIBLE?
-    ====================================================== */
-
-    function getVisibleCards() {
-
-        if (window.innerWidth <= 575) {
-            return 1;
-        }
-
-        if (window.innerWidth <= 991) {
-            return 2;
-        }
-
-        return 4;
-    }
-
-
-    /* ======================================================
-       GET CARD WIDTH + GAP
-    ====================================================== */
-
-    function getMoveDistance() {
-
-        const card = track.querySelector(".video-card");
-
-        if (!card) {
-            return 0;
-        }
-
-        const cardWidth =
-            card.getBoundingClientRect().width;
-
-        const trackStyle =
-            window.getComputedStyle(track);
-
-        const gap =
-            parseFloat(trackStyle.gap) || 0;
-
-        return cardWidth + gap;
-    }
-
-
-    /* ======================================================
-       UPDATE SLIDER
-    ====================================================== */
-
-    function updateSlider() {
-
-        const cards =
-            track.querySelectorAll(".video-card");
-
-        const totalCards =
-            cards.length;
-
-        const visibleCards =
-            getVisibleCards();
-
-        /*
-           Example:
- 
-           8 cards
-           4 visible
- 
-           Maximum index = 8 - 4 = 4
-        */
-
-        const maxIndex =
-            Math.max(
-                0,
-                totalCards - visibleCards
-            );
-
-
-        /* Keep index within valid range */
-
-        currentIndex =
-            Math.max(
-                0,
-                Math.min(
-                    currentIndex,
-                    maxIndex
-                )
-            );
-
-
-        /* Move ONE card */
-
-        const moveDistance =
-            getMoveDistance();
-
-        const translate =
-            currentIndex * moveDistance;
-
-        track.style.transform =
-            `translateX(-${translate}px)`;
-
-
-        /* ==================================================
-           BUTTON VISIBILITY
-        ================================================== */
-
-        /*
-           Beginning:
-           Hide Previous
-        */
-
-        prevButton.classList.toggle(
-            "d-none",
-            currentIndex === 0
-        );
-
-
-        /*
-           End:
-           Hide Next
-        */
-
-        nextButton.classList.toggle(
-            "d-none",
-            currentIndex >= maxIndex
-        );
-
-    } // <-- THIS WAS MISSING
-
-
-    /* ======================================================
-       NEXT BUTTON
-    ====================================================== */
-
-    nextButton.addEventListener(
-        "click",
-        function () {
-
-            const totalCards =
-                track.querySelectorAll(
-                    ".video-card"
-                ).length;
-
-            const maxIndex =
-                Math.max(
-                    0,
-                    totalCards - getVisibleCards()
-                );
-
-
-            /*
-               Move only ONE card
-            */
-
-            if (currentIndex < maxIndex) {
-
-                currentIndex++;
-
-                updateSlider();
-
-            }
-
-        }
-    );
-
-
-    /* ======================================================
-       PREVIOUS BUTTON
-    ====================================================== */
-
-    prevButton.addEventListener(
-        "click",
-        function () {
-
-            /*
-               Move only ONE card backwards
-            */
-
-            if (currentIndex > 0) {
-
-                currentIndex--;
-
-                updateSlider();
-
-            }
-
-        }
-    );
-
-
-    /* ======================================================
-       RESPONSIVE RESIZE
-    ====================================================== */
-
-    window.addEventListener(
-        "resize",
-        function () {
-
-            updateSlider();
-
-        }
-    );
-
-
-    /* ======================================================
-       INITIALIZE
-    ====================================================== */
-
-    updateSlider();
-
-});
-
